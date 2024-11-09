@@ -1,7 +1,0 @@
-p label .titulo{
-    font-weight: bold;
-}
-
-p label.campo{
-    font-weight: unset;
-}

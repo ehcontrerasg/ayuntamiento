@@ -1,13 +1,13 @@
 <?php
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 session_start();
-include_once ('../../../include.php');
+include_once '../../../clases/class.usuario.php';
 $loguser = $_SESSION['usuario'];
 $passuser = $_SESSION['contrasena'];
 $coduser = $_SESSION['codigo']; 
 $nomuser = $_SESSION['nombre'];
-	
-$Cnn = new OracleConn(UserGeneral, PassGeneral);
-$link = $Cnn->link;
+
 ?>		
 <!DOCTYPE html>
 <html lang="en">
@@ -20,14 +20,9 @@ $link = $Cnn->link;
 </head>
 <body>
 	<ul id="accordion" class="accordion">
-	<?php										
-	$sql = "SELECT M.ID_MENU, M.DESC_MENU, M.ICONO, M.ORDEN
-	FROM SGC_TP_MENUS M, SGC_TP_PERFILES P 
-	WHERE M.ID_MENU = P.ID_MENU AND M.ID_PADRE = 1 
-	AND P.ID_USUARIO = '$coduser' AND M.ACTIVO = 'S' 
-	AND (M.ID_MODULO = 1) ORDER BY ORDEN ASC";
-	$stid = oci_parse($link, $sql);
-	oci_execute($stid, OCI_DEFAULT);
+	<?php
+    $u=new Usuario();
+    $stid=$u->getMenuByModulosUser($coduser,1);
 	while (oci_fetch($stid)) {
 		$cod_menu = oci_result($stid, 'ID_MENU');
 		$des_menu = oci_result($stid, 'DESC_MENU');
@@ -36,12 +31,7 @@ $link = $Cnn->link;
 		<li>
 			<div class="link"><i class="fa <?php echo $icono?>"></i><?php echo $des_menu;?><i class="fa fa-chevron-down"></i></div>
 		<?php
-		$sql2 = "SELECT DISTINCT M.DESC_MENU, M.URL, M.ORDEN 
-		FROM SGC_TP_MENUS M, SGC_TP_PERFILES P  
-		WHERE M.URL IS NOT NULL AND M.ID_PADRE = $cod_menu AND  P.ID_MENU=M.ID_MENU AND P.ID_USUARIO='$coduser'
-		ORDER BY ORDEN ASC";
-		$stida = oci_parse($link, $sql2);
-		oci_execute($stida, OCI_DEFAULT);	
+        $stida=$u->getMenuHijByMenuUser($cod_menu,$coduser);
 		?>
 		<ul class="submenu">
 		<?php
@@ -57,7 +47,6 @@ $link = $Cnn->link;
 		</li>
 		<?php   
 	}oci_free_statement($stid);
-	oci_close($link);
 	?>	
 		<li>
 			<a href="../../../index2.php/" target="_top"><div class="link"><i class="fa fa-th"></i>MEN&Uacute; PRINCIPAL</div></a>

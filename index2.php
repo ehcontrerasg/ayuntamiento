@@ -1,6 +1,7 @@
 <?php
 session_start();
-
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
 /********************************************************************/
 /*  SOFTWARE DE GESTION COMERCIAL ACEA DOMINICANA                   */
 /*  ACEA DOMINICANA - REPUBLICA DOMINICANA                            */
@@ -9,6 +10,7 @@ session_start();
 /********************************************************************/
 
 include_once 'include.php';
+include_once 'clases/class.usuario.php';
 $loguser   = $_SESSION['usuario'];
 $passuser  = $_SESSION['contrasena'];
 $coduser   = $_SESSION['codigo'];
@@ -138,21 +140,16 @@ function MM_swapImage() { //v3.0
     <div class="row">
    <?php
 
-$Cnn  = new OracleConn(UserGeneral, PassGeneral);
-$link = $Cnn->link;
+   $u=new Usuario();
+   $datos=$u->getModulosByUser($coduser);
 
-$sql = "SELECT M.ID_MODULO, M.DESC_MODULO, U.ACTIVO
-         FROM SGC_TP_MODULOS M, SGC_TT_USUARIO_MODULO U
-         WHERE M.ID_MODULO = U.ID_MODULO AND M.ACTIVO = 'S'
-         AND U.ID_USUARIO = '$coduser'
-         ORDER BY M.ORDEN";
-//echo $sql;
-$stid = oci_parse($link, $sql);
-oci_execute($stid);
-while (oci_fetch($stid)) {
-    $cod_modulo = oci_result($stid, 'ID_MODULO');
-    $des_modulo = oci_result($stid, 'DESC_MODULO');
-    $act_modulo = oci_result($stid, 'ACTIVO');
+
+
+
+while (oci_fetch($datos)) {
+    $cod_modulo = oci_result($datos, 'ID_MODULO');
+    $des_modulo = oci_result($datos, 'DESC_MODULO');
+    $act_modulo = oci_result($datos, 'ACTIVO');
     if ($act_modulo == "S") {
         ?>
 
@@ -177,7 +174,7 @@ while (oci_fetch($stid)) {
         <?php
 }
 }
-oci_free_statement($stid);
+oci_free_statement($datos);
 ?>
 
 </div>

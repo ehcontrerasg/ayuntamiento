@@ -1,4 +1,8 @@
 <?php
+//error_reporting(E_ERROR);
+//ini_set("display_errors", "1");
+
+
 session_start();
 if (isset($_SESSION['usuario'])) {
     $segundos = 1800; //si pasa este tiempo se detecta la inactividad del usuario en el sitio

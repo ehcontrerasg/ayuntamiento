@@ -765,6 +765,61 @@ WHERE ID_CARGO=200";
         }
     }
 
+    public function getModulosByUser($coduser){
+        $sql = "SELECT M.ID_MODULO, M.DESC_MODULO, U.ACTIVO
+         FROM SGC_TP_MODULOS M, SGC_TT_USUARIO_MODULO U
+         WHERE M.ID_MODULO = U.ID_MODULO AND M.ACTIVO = 'S'
+         AND U.ID_USUARIO = '$coduser'
+         ORDER BY M.ORDEN
+                ";
+
+        $resultado = oci_parse($this->_db, $sql);
+
+        if(oci_execute($resultado)){
+            oci_close($this->_db);
+            return $resultado;
+        }else{
+            oci_close($resultado);
+            return false;
+        }
+    }
+
+    public function getMenuByModulosUser($coduser,$menu){
+        $sql = "SELECT M.ID_MENU, M.DESC_MENU, M.ICONO, M.ORDEN
+	FROM SGC_TP_MENUS M, SGC_TP_PERFILES P 
+	WHERE M.ID_MENU = P.ID_MENU AND M.ID_PADRE = $menu
+	AND P.ID_USUARIO = '$coduser' AND M.ACTIVO = 'S' 
+	AND (M.ID_MODULO = $menu) ORDER BY ORDEN ASC
+                ";
+
+        $resultado = oci_parse($this->_db, $sql);
+
+        if(oci_execute($resultado)){
+            oci_close($this->_db);
+            return $resultado;
+        }else{
+            oci_close($resultado);
+            return false;
+        }
+    }
+    public function getMenuHijByMenuUser($cod_menu,$coduser){
+        $sql = "SELECT DISTINCT M.DESC_MENU, M.URL, M.ORDEN 
+		FROM SGC_TP_MENUS M, SGC_TP_PERFILES P  
+		WHERE M.URL IS NOT NULL AND M.ID_PADRE = $cod_menu AND  P.ID_MENU=M.ID_MENU AND P.ID_USUARIO='$coduser'
+		ORDER BY ORDEN ASC
+                ";
+
+        $resultado = oci_parse($this->_db, $sql);
+
+        if(oci_execute($resultado)){
+            oci_close($this->_db);
+            return $resultado;
+        }else{
+            oci_close($resultado);
+            return false;
+        }
+    }
+
     public function getUsuario( $arrayUsuario = array(
                                             'codigo' => null,
                                             'login' => null, 
