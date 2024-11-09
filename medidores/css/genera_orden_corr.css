@@ -1,0 +1,11 @@
+#genOrdCorrForm {
+	background: #f2f2f2;
+	border: 2px solid #dfdbdb;
+	border-radius: 5px;
+}
+
+#btnGenerar{
+    background: #7f1b3f;
+    color:white;
+	font-size: 18px;
+}
