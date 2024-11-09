@@ -1,0 +1,81 @@
+.cabecera {
+	padding: .5em;
+    font-size: 1.2em;
+}
+
+.form-group {
+	margin: 1em .5em;
+	margin-right: 0;
+}
+
+form[name='report_form'] {
+	background-color: #e8e8e8;
+}
+
+section {
+	padding-left: 0;
+}
+
+
+#acciones{
+	display: none;
+}
+
+.file {
+	overflow: auto;
+	border: 2px solid #d2d2d2;
+	border-radius: 5px;
+	background: #f7f7f7;
+	padding: 0px;
+}
+
+.file {
+	overflow: auto;
+	border: 2px solid #d2d2d2;
+	border-radius: 5px;
+	background: #f7f7f7;
+	padding: 0px;
+	display: flex;
+	align-items: center;
+}
+
+.file:hover{
+	outline: 0;
+	text-decoration: none !important;	
+}
+
+.file a {
+	width: 100%;
+	text-decoration: none;
+	padding: 0px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+}
+
+.file img {
+	height: 50px;
+	width: 45px;
+	padding: 0;
+	margin: 0;
+	margin-right: 10px;
+}
+
+#dvArchivos{
+	padding-left: 7% !important;
+}
+
+#dvArchivosSubidos{
+	margin-top: 10px;
+}
+
+.aDeleteFile {
+	font-size: 25px;
+	margin: 5px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.aDeleteFile:hover{
+	text-decoration: none;
+}

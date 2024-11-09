@@ -1,0 +1,42 @@
+header{
+	background-color: #ff8000;
+	margin: 10px;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 0px solid #000000;
+}
+header h4{
+	color: white;
+	font-weight: bold;
+}
+form{
+	width: 80%;
+	margin: 0px auto;
+}
+.datagrid table{
+	border-radius: 8px 8px 8px 8px;
+	-moz-border-radius: 8px 8px 8px 8px;
+	-webkit-border-radius: 8px 8px 8px 8px;
+	border: 0px solid #000000;
+}
+.datagrid table thead, .datagrid table tfoot{
+	background-color: #e7e7e7;
+	color: #3e3d3db3;
+	font-weight: bold;
+}
+#txtIdPago, #txtCodSistema, #txtUsrAnulacion{
+	width: 90px;
+	/*margin: -3px;
+	margin: -3px;
+	margin-left: -10px;
+	margin-right: -10px;*/
+}
+
+#txtFechPago, #txtFechAnulacion {
+	width: 150px;
+}
+/*
+#txtCodSistema{
+	margin-right: -30px;	
+}*/

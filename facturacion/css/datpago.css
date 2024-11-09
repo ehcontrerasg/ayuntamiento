@@ -1,0 +1,94 @@
+label{
+    color: #000000;
+    padding: 3px;
+	float:left;
+}
+
+.desc{
+    border: 1px solid #000000;
+}
+
+#divdescPag{
+    /*border: 1px solid #000000;*/
+    padding: 3px;
+    margin-top: 5px;
+}
+
+.bloque {
+    float: left;
+    width: 50%;
+    height: 240px;
+    margin: 0px;
+}
+
+
+.bloque2 {
+    float: left;
+    width: 25%;
+    height: 240px;
+    margin: 0px;
+}
+
+.bloque3 {
+    float: left;
+    width: 100%;
+    height: 240px;
+    margin: 0px;
+}
+
+.divinfo{
+    float: left;
+    width: 19%;
+    height: 30px;
+    margin: 0px;
+
+}
+
+
+.titulo1 { color: red }
+
+iframe{
+    border-color: #666666;
+    border:solid;
+    border-width:0px ;
+    display: block;
+    float: left;
+    width: 310px;
+    height: 230px;
+}
+
+#ifpdf{
+    width: 630px;
+    height: 259px;
+}
+
+#ifdif{
+    width: 22%;
+    height: 130px;
+}
+#ifdcer{
+    width: 22%;
+    height: 130px;
+}
+
+
+#diddatestcuenta{
+     width: 70%;
+     height: 200px;
+     /*background-color: #000099;*/
+     float: left;
+
+ }
+
+#divImpRepFac{
+    width: 20%;
+    height: 200px;
+    float: left;
+}
+
+.linkRep{
+    font-size: 1.5em;
+}
+
+
+

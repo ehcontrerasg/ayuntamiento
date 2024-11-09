@@ -1,0 +1,25 @@
+.butReportes{
+    width: 7.5em;
+    height: 5em;
+    float: left;
+    margin: 1em;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 1em;
+    text-align: center;
+    background:linear-gradient(#D8D8D8,#FFFFFF,#FFFFFF,#D8D8D8);
+    border-color:#A349A3;
+    color: #A349A3;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.butReportes:hover{
+    border-radius: 0em;
+    color: #000000;
+    cursor: pointer;
+}

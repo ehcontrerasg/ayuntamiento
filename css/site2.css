@@ -1,0 +1,71 @@
+/*---------------------------------------------------------
+
+template:	lorem
+version:	1.0
+author:		gorotron
+website:	http://www.gorotron.com
+
+usage:		creative commons attribution v3.0
+
+---------------------------------------------------------*/
+
+
+/* Layout
+---------------------------------------------------------*/
+
+
+#header {
+	/*background:url(../images/catastro/bg.gif) bottom repeat-x;*/
+	background:rgb(163,73,163);
+	width:100%;
+	height:13.5em;
+	position:relative;
+}
+
+.masthead2	{
+	width:50em;
+	margin:0 auto;
+	padding:4em 0 5.8em 19em;
+	height:80px;
+	position:absolute;
+	left: 246px;
+	top: 1px;
+}
+
+
+/* Typography
+---------------------------------------------------------*/
+
+
+
+p {
+	/*line-height:1.5em;	
+	font-size:1.2em;
+	margin-bottom:1em;*/
+	color:#FFF;
+	position: relative;
+	top: 40px;
+}
+
+.td {
+	font:250% "Trebuchet MS";
+	/*padding:0;
+	margin:0;*/
+	color:#FFF;
+	/*top: 8px;
+	/*position: absolute;
+	/*left: 190px;*/
+}
+
+
+
+.masthead {
+	color:#FFF;
+	position: relative;
+	
+	font-size:11px;
+}
+
+
+
+

@@ -1,0 +1,441 @@
+/* CSS Document */
+.cabecera{
+    width: 100%;
+    min-width:300px ;
+    height: 40px;
+    color: #ffffff;
+    background-color: #000040;
+    margin: .87em 0 0 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "DejaVu Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+
+}
+
+#butGenEstPqr, .btnserv {
+    border: none;
+    background: #000040;
+    color: white;
+    padding: .5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+.subCabecera{
+    width: 100%;
+    min-width:300px ;
+    height: 20px;
+    color: #000040;
+    background-color: #bfbdbd;
+    *margin: .5em auto;
+    text-align: left;
+    font-size: 12px;
+    font-family: "DejaVu Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+label{
+    width: 20em;
+    color: #000000;
+}
+
+
+body{
+    margin: 0 auto;
+    width: 96.4%;
+    min-width: 595px;
+    text-align: center;
+}
+
+.formulario{
+    margin: .8em auto;
+    width: 98%;
+    border-color: rgb(163,73,163);
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: .3em;
+}
+
+.divfiltros{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em 0em;
+    background: #ebebeb;
+   /* min-width: 200px;
+    margin: 0 0;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #EEEEEE;*/
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+}
+
+.contenedor{	
+    display: inline-table;
+	height:20px;
+    /*margin: 0 .5em;*/
+	border-style: solid;
+    border-width: 0.1px;
+    border-color: #EEEEEE;
+}
+
+input{
+    width: 30px;
+    height: 12px;
+    padding: .2em .2em;
+    border:1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:normal;
+	text-transform:uppercase;
+	-webkit-appearance: none;
+}
+
+
+
+.inputLargo{
+    width: 50px;
+    height: 12px;
+    padding: .2em .2em;
+    border:1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:normal;
+	text-transform:uppercase;
+	-webkit-appearance: none;
+}
+
+.inputNumber{
+    width: 50px;
+    height: 12px;
+    padding: .2em .2em;
+    border:1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:normal;
+	text-transform:none;
+	-webkit-appearance: none;
+}
+
+.inputDate{
+    width: 115px;
+    height: 12px;
+    padding: .2em .2em;
+    border:1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:normal;
+	-webkit-appearance: none;
+}
+
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+
+select{
+    height: 18px;
+    padding: .2em .2em;
+    border:1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:normal;
+}
+
+.butExcel{
+	margin-top:14px;
+	margin-right:10px;
+	font-size:14px;
+	font-weight:400;
+	line-height:1.42857143;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-image:none;
+	border:1px solid transparent;
+	border-radius:4px;
+	background-color:#FFFFFF;
+	border-color:#006600;
+	color:#006600;
+}
+
+.butExcel:hover,.butExcel:focus{
+	background:linear-gradient(#006600,#006600,#006600,#006600);
+	color:#FFFFFF;	
+}
+
+.butPdf{
+	margin-top:14px;
+	margin-right:10px;
+	font-size:14px;
+	font-weight:400;
+	line-height:1.42857143;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-image:none;
+	border:1px solid transparent;
+	border-radius:4px;
+	background-color:#FFFFFF;
+	border-color:#990000;
+	color:#990000;
+}
+
+.butPdf:hover,.butExcel:focus{
+	background:linear-gradient(#990000,#990000,#990000,#990000);
+	color:#FFFFFF;	
+}
+
+.butPantalla{
+	margin-top:14px;
+	margin-right:10px;
+	font-size:14px;
+	font-weight:400;
+	line-height:1.42857143;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-image:none;
+	border:1px solid transparent;
+	border-radius:4px;
+	background-color:#FFFFFF;
+	border-color:#000040;
+	color:#000040;
+}
+
+.butPantalla:hover,.butExcel:focus{
+	background:linear-gradient(#000040,#000040,#000040,#000040);
+	color:#FFFFFF;	
+}
+
+/*.contenedor  button{
+	display:inline-block;
+	padding:6px 12px;
+	margin-bottom:0;
+	font-size:14px;
+	font-weight:400;
+	line-height:1.42857143;
+	text-align:center;
+	white-space:nowrap;
+	vertical-align:middle;
+	cursor:pointer;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	background-image:none;
+	border:1px solid transparent;
+	border-radius:4px;
+	background:linear-gradient(#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF);
+	border-color:#000040;
+	color:#000040;
+
+}
+
+.contenedor button:hover,.button:focus{
+	background:linear-gradient(#000040,#000040,#000040,#000040);
+	color:#FFFFFF;	
+}*/
+
+
+
+
+
+/*.butReportes{
+    width: 11.5em;
+    height:5em;
+    float: left;
+    margin: .65em .4em;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 0.3em;
+    text-align: center;
+    background:linear-gradient(#D8D8D8,#FFFFFF,#FFFFFF,#D8D8D8);
+    border-color:#000040;
+    color: #000040;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    transition:all 0.3s ease;
+}
+
+.butReportes:hover{
+    border-radius: 1em;
+    color: #000000;
+    cursor: pointer;
+}*/
+
+.datoForm{
+    display: inline-table;
+    width: 49%;
+
+}
+
+.datoForm span{
+    display: table-cell;
+    font-size: 14px;
+    padding: 3px 7px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: left;
+    background-color: #eee;
+
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    height: 2em;
+
+}
+
+.titDato{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0em;
+}
+
+.inpDatp{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0em;
+}
+
+.inpDatp input{
+    width: 14em;
+    height: 2.7em;
+    border-radius: 0.5em;
+    float: right;
+    font-size: .8em;
+    padding: .1em;
+}
+
+.inpDatp select{
+    width: 14.5em;
+    height: 3.05em;
+    border-radius: 0.5em;
+    float: right;
+    font-size: .8em;
+    padding: .1em;
+}
+
+.botonFormulario{
+    background-color: #000040;
+    border-color: #000040;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    color: #ffffff;
+    border: 1px solid transparent;
+}
+
+span{
+    margin: 0;
+}
+
+.contenedor > div {
+	padding: 2px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.contenedor .radio label,
+.contenedor .checkbox label {
+    display:inline;
+	padding: 0px 54px 0px 15px;
+    cursor: pointer;
+    color:#000000;
+    position: relative;
+    font-size: 1em;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.contenedor .radio label:hover,
+.contenedor .checkbox label:hover {
+	background:#99CCFF; 
+}
+
+.contenedor .radio label:before,
+.contenedor .checkbox label:before {
+	content: "";
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    position:absolute;
+    left: 0px;
+    border-radius: 50%;
+    background: none;
+    border: 2px solid #000040; 
+}
+
+.contenedor input[type="radio"] {
+	display: none; 
+}
+
+.contenedor input[type="radio"]:checked + label:before {
+    display: none; 
+}
+
+.contenedor input[type="radio"]:checked + label {
+    background: #000040;
+    border-radius: 2px;
+    color: #fff; 
+}
+
+.contenedor .checkbox label:before {
+    border-radius: 3px; 
+}
+
+.contenedor .checkbox input[type="checkbox"] {
+    display: none; 
+}
+
+.contenedor .checkbox input[type="checkbox"]:checked + label:before {
+    display: none; 
+}
+
+.contenedor .checkbox input[type="checkbox"]:checked + label {
+    background: #FF4136;
+    color: #fff;
+}

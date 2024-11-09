@@ -1,0 +1,170 @@
+/*body{
+	padding: 0px;
+	margin: 0px;
+}*/
+header{
+	color: #ffffff;
+	background-color: #65B333;
+	font-weight: bold;
+
+}
+#sctReclamar{
+	color: green;
+	background-color: #eae9e9;
+	padding: 3%;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 0px solid #000000;
+}
+#obsRequerimiento{
+	width: 100%;
+	color: #333;
+}
+nav{
+	*margin-top: 1%;
+}
+#btnEnvReclamo {
+	margin-right: 2%;
+}
+#btnEnvReclamo, #btnCanReclamo {
+	width: 120px;
+}
+.iconSOl{
+	color: #65b333;
+	margin-top: 50%;
+	font-size: 19px;
+	opacity: 0.5;
+}
+.lstSolicitudes {
+	background-color: rgba(234, 234, 234, 0.56);
+	color: #008017;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 2%;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 0.1px solid #65b333;
+
+}
+#ctnSolTIRealizadas .form-control[disabled], #ctnSolTIRealizadas .form-control[readonly], #ctnSolTIRealizadas fieldset[disabled] .form-control {
+    background-color: transparent;
+    opacity: 1;
+    font-size: 14px;
+    color: #555;
+}
+/*.mostrar{
+	transition:0.5s linear all;
+	display: block;
+}*/
+.ocultar{
+	display: none;
+}
+.fadeOUT{
+	transition:0.5s linear all;
+		opacity:0;
+}
+#AsignacionSolTI {
+	background-color: #f8f8f8;
+	margin-bottom: 1%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-radius: 5px 5px 5px 5px;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px 5px 5px 5px;
+	border: 1px solid #6ccfe0;
+}
+#AsignacionSolTI figure img {
+	border: 3px solid #c6c6c6;
+}
+#AsignacionSolTI figure figcaption {
+	font-weight: bold;
+	color: green;
+}
+/*.idSCMS {
+	color: white;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: center;
+    position: relative;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+	left: 0px;
+	width: 45px;
+	height: 45px;
+	background-color: #65b333;
+	/*
+	bottom: 5px;
+	padding: 1%;
+	background: -webkit-linear-gradient( 320deg, #65b333 45%, #f3f3f3 50%, #f3f3f3 60%, #f3f3f3);
+	-webkit-border-radius: 5px 5px 0px 0px;/
+	
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+
+}
+.idSCMS {
+	color: white;
+	height: 45px;
+	width: 45px;
+	display: table-cell;
+	text-align: center;
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	vertical-align: middle;
+	border-radius: 50%;
+	background: #65b333;
+}
+.idSCMS:hover{
+
+}*/
+.detalle{
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+.detalle span{
+	cursor: pointer;
+}
+.idSCMS {
+    width:65%;
+}
+.idSCMS:hover{
+cursor: pointer;
+}
+.idSCMS:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height:0;
+    padding-bottom: 100%;
+    background: #65b333; 
+    -moz-border-radius: 50%; 
+    -webkit-border-radius: 50%; 
+    border-radius: 50%;
+}
+.idSCMS div {
+    float:left;
+    width:100%;
+    padding-top:36%;
+    line-height:1em;
+    margin-top:-0.5em;
+    text-align:center;
+    color:white;
+}
+
+#AsignacionSolTI li{
+	margin-bottom: 1%;
+	text-align: left;
+}
+#AsignacionSolTI li span{
+	margin-right: 8px;
+}
+#AsignacionSolTI li span:hover{
+	cursor: pointer;
+}

@@ -1,0 +1,218 @@
+.cabecera{
+    width: 100%;
+    min-width:300px ;
+    height: 40px;
+    color: #ffffff;
+    background-color: #A349A3;
+    margin: .87em 0 0 0;
+    text-align: center;
+    font-size: 1.4em;
+    font-family: "DejaVu Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+
+}
+
+.subCabecera{
+    width: 100%;
+    min-width:300px ;
+    height: 20px;
+    color: #ffffff;
+    background-color: #A349A3;
+    margin: .5em auto;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: "DejaVu Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+label{
+    color: #6d6d6d;
+    font-weight: bold;
+    font-family: sans-serif;
+    margin-bottom: .3em;
+}
+
+
+body{
+    margin: 0 auto;
+    *width: 96.4%;
+    *min-width: 595px;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.formulario{
+    margin: .8em auto;
+    width: 98%;
+    border-color: rgb(163,73,163);
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: .3em;
+}
+
+input{
+    width: 8em;
+    height: 1.5em;
+    *padding: .2em .2em;
+    border:1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    *font-size:.6em;
+    font-weight:normal;
+}
+
+select{
+    width: 8em;
+    height: 1.5em;
+    padding: .2em .2em;
+    *border:1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    /*font-size:.6em;*/
+    font-weight:normal;
+    outline: #A349A3;
+}
+
+.contenedor  button{
+    margin: .8em auto;
+    text-align: center;
+    *background:linear-gradient(#D8D8D8,#FFFFFF,#FFFFFF,#D8D8D8);
+    background: #A349A3;
+    *border-color:#A349A3;
+    color:white;
+    border-radius: 15px;
+    padding: .5em 1em;
+    font-size: 1em;
+    height: 2.1em;
+    cursor: pointer;
+    border: none;
+}
+
+.divfiltros{
+
+    width: 100%;
+    min-width: 200px;
+
+    margin: 0 0;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #EEEEEE;
+}
+
+.contenedor{
+    display: flex;
+    margin: .5em .5em;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.butReportes{
+    width: 20%;
+    height:7em;
+    float: left;
+    margin: .65em 1em;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 0.3em;
+    text-align: center;
+    background:linear-gradient(#D8D8D8,#FFFFFF,#FFFFFF,#D8D8D8);
+    border-color:#A349A3;
+    color: #A349A3;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    transition:all 0.3s ease;
+}
+.butReportes i {
+    font-size: 2em;
+}
+
+.butReportes:hover{
+    border-radius: 1em;
+    color: #000000;
+    cursor: pointer;
+}
+
+.datoForm{
+    display: inline-block;
+    width: 49%;
+
+}
+
+.datoForm span{
+    display: table-cell;
+    font-size: 14px;
+    padding: 3px 7px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: left;
+    background-color: #eee;
+
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    height: 2em;
+
+}
+
+.titDato{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0em;
+}
+
+.inpDatp{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0em;
+}
+
+.inpDatp input{
+    width: 14em;
+    height: 2.7em;
+    border-radius: 0.5em;
+    float: right;
+    font-size: .8em;
+    padding: .1em;
+}
+
+.inpDatp select{
+    width: 14.5em;
+    height: 3em;
+    border-radius: 0.5em;
+    float: right;
+    font-size: .8em;
+    padding: .1em;
+}
+
+.botonFormulario{
+    background-color: rgb(163,73,163);
+    border-color: rgb(163,73,163);
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    color: #ffffff;
+    border: 1px solid transparent;
+}

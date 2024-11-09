@@ -1,0 +1,84 @@
+/* --- menu styles ---
+note:
+	not all browsers render styles the same way so try out your style sheet
+	on different browsers before publishing;
+*/
+/* level 0 inner */
+
+.m0l0iout { /*COLOR, TIPO Y TAMAÑO LETRA BOTON INACTIVO*/
+	font-family: Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	/*text-decoration: none;*/
+	padding: 4px;
+	color: white;
+}
+.m0l0iover { /*COLOR TIPO Y TAMAÑO LETRA BOTON ACTIVO*/
+	font: 11px Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	/*text-decoration: none;*/
+	padding: 4px;
+	color: #A349A3;
+	font-weight:bold;
+}
+
+/* level 0 outer */
+.m0l0oout { /*BORDE Y COLOR BOTON INACTIVO*/
+	display:block;
+	text-decoration : none;
+	padding: 0px 0px 0px 0.5em;
+	border-left: 15px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF;
+	border-right: 1px solid #FFFFFF;
+	border-bottom: 1px solid #FFFFFF;
+	background-color:#A349A3;
+	font-weight:bold;
+}
+.m0l0oover { /*BORDE Y COLOR BOTON ACTIVO*/
+	text-decoration: none;
+	padding: 0px 0px 0px 0.5em;
+	border-left: 15px solid  #A349A3;
+	border-right: 1px solid #A349A3;
+	border-top: 1px solid #A349A3;
+	border-bottom: 1px solid #A349A3;
+	background-color:#FFFFFF;
+	color:#FFFFFF;			
+}
+
+/* level 1 inner */
+.m0l1iout {
+	font: 12px Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	padding: 4px;
+	color:#FFFFFF;
+}
+.m0l1iover {
+	font: 12px Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-decoration : none;
+	padding: 4px;
+	color: #A349A3;
+}
+
+/* level 1 outer */
+.m0l1oout {
+	text-decoration : none;
+	border : 1px solid #FFFFFF;
+	/*background: url(../funciones/boton_on.png) no-repeat right top;*/
+	background-color:#A349A3;
+	filter: alpha(opacity=100);
+	-moz-opacity: 100%;
+}
+.m0l1oover {
+	text-decoration : none;
+	border : 1px solid #A349A3;
+	background-color:#FFFFFF;
+	color:#A349A3;
+	/*background: url(../funciones/boton_off.png) no-repeat right top;	*/
+}
+
+/* level 2 inner */
+.m0l2iover {
+	font: 12px Tahoma, Verdana, Geneva, Arial, Helvetica, sans-serif;
+	text-decoration : none;
+	padding: 1px 1px 1px 1px;
+	color: #000000;
+}
+

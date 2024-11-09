@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(40deg, rgba(0,94,169,1) 0%, rgba(0,149,176,1) 63%, rgba(135,197,78,1) 100%); 
+}
+
+#content{
+    height: 100%;
+}
+
+#dvFormulario{
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #4f4c4c;
+    border: 1px solid gray; 
+}
+
+#dvFormulario #encabezado img{
+    width: 80px;
+}
+
+#spnAceasoft {
+	color: #0074ac;
+    font-size: 22px;
+}
+
+#lblTitulo {
+	font-size: 17px;
+	color: #0075ac;
+	font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+#dvFormulario input[type=submit] {
+	background: #497fa2;
+	border: #497fa2;
+}
+
+#aVolverInicio {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	text-align: end;
+}

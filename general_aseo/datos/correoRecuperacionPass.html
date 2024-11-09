@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            height: 100%;
+        }
+        
+        body {
+            height: 95%;
+            background: linear-gradient(40deg, rgba(0,94,169,1) 0%, rgba(0,149,176,1) 63%, rgba(135,197,78,1) 100%);
+            display: flex;
+            align-items: center;
+        }
+
+        #content {
+            min-width: 50%;
+            margin: 0 auto;
+            background: white;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px #514b4b;
+        }
+
+        hr {
+            border: 0.1px solid #e6e6e6;
+        }
+
+        #encabezado img{
+            width: 70px;
+        }
+
+        #encabezado {
+            display: flex;
+        }
+
+        #logo {
+            width: 40%;
+            display: flex;
+        }
+
+        #logo #spnAceasoft {
+            font-size: 20px;
+            color: #0073ac;
+        }
+
+        #titulo {
+            width: 70%;
+            font-size: 22px;
+            font-weight: bold;
+            color: #065c9d;
+        }
+
+        #cuerpo{
+            padding: 10px;
+        }
+
+        #cuerpo p {
+            font-size: 18px;
+        }
+
+        #dvPassProvisional {
+            background: #ececec;
+            text-align: center;
+            padding: 15px;
+            font-size: 20px;
+            color: #065c9d;
+            font-weight: bold;
+            border: 1px solid #cacaca;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <div id="encabezado" class="row">
+            <div id="logo">
+                <img src="../../images/ACEA-Logo.svg" alt="Logo de ACEA"><span id="spnAceasoft">SOFT</span>
+            </div>
+            <label id="titulo">Recuperación de contraseña</label>
+        </div>
+        <hr>
+        <div id="cuerpo">
+            <p>Hola, hemos recibido una solicitud de recuperación de contraseña del usuario <strong>Jhon Doe</strong>.</p>
+            <p>A continuación, la contraseña provisional: </p>
+            <div id="dvPassProvisional">
+                <label>zVa930X</label>
+            </div>
+            <p id="pNota">Nota: Esta contraseña será válida sólo por 30 minutos.</p>
+        </div>
+    </div>
+</body>
+</html>

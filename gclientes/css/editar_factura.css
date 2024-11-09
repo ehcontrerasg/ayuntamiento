@@ -1,0 +1,59 @@
+#ingresoFactura{
+
+    background-color: #e5e5e5;
+    padding: 5px ;
+    /*display: inline-block;*/
+
+}
+
+.cabecera{
+    width: 100%;
+    min-width:300px ;
+    height: 40px;
+    color: #ffffff;
+    background-color: #B51604;
+    margin: .87em 0 0 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "DejaVu Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+
+}
+
+#datosEditar{
+    margin/*-top*/: 40px;
+    width: 30%;
+    padding: 5px;
+    -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.3), inset 0 0 0;
+    float: left;
+}
+
+#datosEditar .form-control/*input[type="text"]*/{
+    margin-left:10px ;
+    width: 75%;
+
+}
+
+#ingresoFactura #txtFactura{
+     width: 200px;
+    margin-right: 10px;
+ }
+
+#mostrarPDF {
+    margin: 20px;
+    float: right;
+    width: 50%;
+}
+
+#btnValidar{
+    margin-left: 38%;
+}
+
+
+#datosFactura{
+    display: none;
+}

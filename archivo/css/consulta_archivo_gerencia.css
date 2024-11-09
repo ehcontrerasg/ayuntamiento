@@ -1,0 +1,61 @@
+/*Título de pantalla*/
+#screenTitle {
+    background: #8a2908;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 1%;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 5px;
+}
+/*Título de pantalla*/
+
+.modal-dialog {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#modalHistorico .modal-dialog {
+    margin-left: 10%;
+}
+
+#modalHistorico .modal-content {
+    width: 200%;
+}
+
+
+.modal-content {
+    width: 160%;
+}
+
+.modal-body.container {
+    max-height: 500px;
+}
+
+.modal-body{
+    overflow: auto;
+}
+
+form{
+    background: #f3f3f3;
+}
+
+table#tblArchivosGerencia thead tr th {
+    text-align: center;
+}
+
+div#dvArchivosGerencia {
+    padding: 1%;
+    box-shadow: grey 0px 0px 3px;
+    overflow-y: auto;
+    max-height: 1024px;
+}
+
+td.tdAcciones {
+    display: flex;
+}
+
+td.tdAcciones button{
+    border-color: white;
+}

@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/*Formulario*/
+#formHeader {
+    display: flex;
+    justify-content: center;
+    background-color: #336699;
+    color: white;
+    margin-top: 0.5%;
+}
+
+#inputs {
+    margin: 0.5%;
+    background-color: #eaeaea;
+    padding: 1%;
+    border-radius: 7px;
+}
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+form > div {
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    justify-content: end;
+}
+
+form>div div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/*Fin del formulario*/
+
+/*Area de botones de exportación*/
+#articleExportacion {
+    background: #e6e6e6;
+    width: 26%;
+    height: 50px;
+    display: none;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-left: 8px;
+    border-radius: 5px;
+
+}
+
+#dvPdf {
+    width: 10%;
+    height: 100%;
+    cursor: pointer;
+}
+
+#dvPdf img {
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*Fin del area de botones de exportación*/
+
+/*Area del reporte*/
+#articleReporte {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#dvResumenGeneral {
+    width: 50%;
+}
+
+table {
+    width: 100%;
+}
+
+#dvResumenGeneral table,th,td{
+    border: 1px solid black;
+}
+
+#dvResumenGeneral table tbody {
+    background-color: #eaeaea;
+}
+
+table thead,th {
+    text-align: center;
+}
+
+#dvResumenConceptoUsoTarifa {
+    overflow-y: auto;
+    max-height: 500px;
+    min-height: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 75%;
+}
+
+.tituloTabla {
+    background: #336699;
+    color: white;
+}
+
+.filaConcepto {
+    background: #0080C0;
+    color: white;
+}
+
+.filaUso {
+    background-color: #83B9FC;
+    color: white;
+}
+
+.filaTotalUso {
+    background: #999999;
+    color: white;
+}
+
+.filaTotalConcepto {
+    background: #666666;
+    color: white;
+}
+
+.filaTotalGeneral{
+    background: #333;
+    color: white;
+}
+
+#dvZonas, #dvPeriodos{
+    flex-grow: 1;
+}
+
+/*Fin area del reporte*/
+
+

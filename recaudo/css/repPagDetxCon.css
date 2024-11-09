@@ -1,0 +1,148 @@
+.cabecera{
+    width: 100%;
+    min-width:300px ;
+    height: 40px;
+    color: #ffffff;
+    background-color: #FF8000;
+    margin: .5em auto;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: "DejaVu Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+
+}
+
+.subCabecera{
+    width: 100%;
+    min-width:300px ;
+    height: 20px;
+    color: #ffffff;
+    background-color: #FF8000;
+    margin: .5em auto;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: "DejaVu Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+.contenedorBusqRang{
+    float: left;
+    width: 15%;
+    min-width: 200px;
+    display: block;
+    margin: 0 0;
+    height:40px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #EEEEEE;
+}
+
+
+.contenedorBusqFech{
+    float: left;
+    width: 30%;
+    min-width: 402px;
+    height:40px;
+    display: block;
+    margin: 0 0;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #EEEEEE;
+}
+
+
+.contenedorBusqVal{
+    float: left;
+    width: 7.5%;
+    min-width: 99px;
+    display: block;
+    margin: 0 0;
+    height:40px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #EEEEEE;
+}
+
+.contenedorBut{
+    float: left;
+    width: 30%;
+    min-width: 402px;
+    display: block;
+    margin: 0 0;
+    height:40px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #EEEEEE;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.titFiltro{
+    font-weight:bold;
+    width: 100%;
+    text-align: center;
+    font-family: "DejaVu Sans", sans-serif;
+    font-size: 0.7em;
+}
+
+label {
+
+    font-family: "DejaVu Sans", sans-serif;
+    font-size: 0.7em;
+}
+
+body{
+    margin: 0 auto;
+    width: 95%;
+    min-width: 405px;
+    text-align: center;
+}
+
+/*input{
+    width: 20%;
+    height: 10px;
+    font-size: 0.8em;
+
+}*/
+
+
+.inputFecha{
+    width: 35%;
+    height: 20px;
+    font-size: 0.8em;
+}
+
+select{
+    width: 100%;
+    height: 18px;
+    font-size: 0.9em;
+}
+
+.buttonRep{
+    margin: 3px auto;
+    text-align: center;
+    background:linear-gradient(#D8D8D8,#FFFFFF,#FFFFFF,#D8D8D8);
+    border-color:#FF8000;
+    color:#FF8000;
+    border-radius: 4px;
+    padding: 6px 12px;
+    font-size: 1em;
+}
+
+.conPdf{
+    height: 500px;
+    width: 100%;
+    margin-top: 5px;
+}
+

@@ -1,0 +1,51 @@
+
+body{
+    height: 100vh;
+}
+
+#content{
+    height: 100%;
+}
+
+/*Título de pantalla*/
+#screenTitle {
+    background: #8a2908;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 1%;
+    box-shadow: 0px 0px 3px gray;
+    border-radius: 5px;
+}
+/*Título de pantalla*/
+
+/*Form*/
+form {
+    height: 75%;
+    padding: 1%;
+    background: #f4f4f4;
+    box-shadow: 0px 0px 3px gray;
+}
+
+/*Remover controles de subida y bajada del campo número de protocolo/*
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+input#inputArchivo {
+    overflow: hidden;
+}
+/*Form*/
+
+
+

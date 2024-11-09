@@ -1,0 +1,301 @@
+/*Media Query*/
+@media screen {
+    #printSection {
+        display: none;
+    }
+}
+
+@media print {
+    body * {
+        visibility:hidden;
+    }
+    #printSection, #printSection * {
+        visibility:visible;
+    }
+    #printSection {
+        position:absolute;
+        left:0;
+        top:0;
+    }
+
+    @page {
+        size: 297mm 210mm; /* landscape */
+        /* you can also specify margins here: */
+        margin: 25mm;
+        margin-right: 45mm; /* for compatibility with both A4 and Letter */
+    }
+}
+
+/*Media Query*/
+
+
+/*Título formulario*/
+#tituloFormulario {
+    margin-top: 0.5%;
+    background: #000040;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0px 0px 4px black;
+}
+
+#tituloFormulario p{
+    text-align: center;
+}
+/*Título formulario*/
+
+/*Div que contiene el formulario de búsqueda, el div que muestra las encuestas y el modal de detalle de encuestas*/
+#content{
+    padding: 1%;
+}
+/*Div que contiene el formulario de búsqueda, el div que muestra las encuestas y el modal de detalle de encuestas*/
+
+/*Div que contiene el formulario*/
+#dvFormulario {
+    background-color: #c6c6c6;
+    margin-top: 0.5%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px #574b4b;
+}
+/*Div que contiene el formulario*/
+
+/*Div que contiene el reporte generado*/
+#dvReporte {
+    min-height: 300px;
+    box-shadow: 0px 0px 5px gray;
+    margin-top: 1%;
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+#dvReporte p{
+    opacity: 0.6;
+}
+
+#tblSatisfaccionUsuario_wrapper{
+    width: 100%;
+}
+
+#tblSatisfaccionUsuario{
+    width: 100%;
+    display: none;
+}
+
+#tblSatisfaccionUsuario thead tr th:nth-child(1) {
+    display: none;
+}
+
+#tblSatisfaccionUsuario tbody tr td:nth-child(1) {
+    display: none;
+}
+/*Div que contiene el reporte generado*/
+
+/*Modal*/
+
+#modal .modal-body{
+    height: 550px;
+    display: flex;
+    flex-flow: column;
+}
+
+.modal-content{
+    overflow: scroll;
+}
+/*Modal*/
+
+/*Reporte de detalle de encuestas*/
+.grid-container{
+    display: grid;
+    grid-template-rows: 16% 4% 25% auto;
+    grid-template-columns: 1fr;
+    height: 100%;
+    width: 100%;
+}
+
+/*Header*/
+.header{
+    display: grid;
+    grid-template-columns: 25% repeat(3,auto);
+    grid-row: 1/2;
+    border: 1px solid black;
+}
+
+.grid-logo{
+    grid-column: 1/2;
+    border-right: 1px solid black;
+    display: inline-grid;
+    justify-items: center;
+}
+
+.form-name {
+    grid-column: 2/3;
+    border-right: 1px solid black;
+    justify-items: center;
+    display: inline-grid;
+    align-items: center;
+    font-weight: bold;
+}
+
+.form-info{
+    grid-column: 3/4;
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+}
+.form-info .title{
+    font-weight: bold;
+}
+
+.form-info div{
+    border-bottom: 1px solid black;
+}
+/*Header*/
+
+/*Blank*/
+.blank{
+    border: 1px solid black;
+    grid-row: 2/3;
+}
+/*Blank*/
+
+/*Quiz general info*/
+.quiz-general-info{
+    grid-row: 3/4;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.quiz-general-info .info-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.group-info{
+    display: flex;
+}
+
+.quiz-general-info span {
+    border-bottom: 1px solid black;
+    width: 70%;
+    text-align: center;
+}
+
+#sugerencia{
+    grid-column: 1/3;
+}
+/*Quiz general info*/
+
+/*Quiz details*/
+.quiz-details{
+    border: 1px solid black;
+}
+
+#quiz-details-header {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    align-items: center;
+    border:1px solid black;
+    background: #c5d9f1;
+}
+
+#dvPercepcion {
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border:1px solid black;
+}
+
+#dvCalificaciones {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    border:1px solid black;
+    background: #ffffcc;
+}
+
+#dvCalificaciones p {
+    border: 1px solid black;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+#quiz-body {
+    display: grid;
+    grid-template-rows: repeat(14,1fr);
+}
+
+#quiz-body .dvRespuesta {
+    display: grid;
+    grid-template-columns: 7.3% 34% auto;
+}
+
+#quiz-body .dvRespuesta label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    height: 100%;
+}
+
+.dvRespuestaCalificacion {
+    display: grid;
+    grid-template-columns: 18.6% 17% 24.8% 19.5% auto;
+    border: 1px solid black;
+}
+
+.dvRespuestaCalificacion div{
+    border: 1px solid black;
+    display: flex;
+}
+
+.casilla {
+    width: 40px;
+    height: 50%;
+    align-self: center;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#dvPregunta15 {
+    display: grid;
+    grid-template-columns: 7.3% auto;
+}
+
+#dvPregunta15 label {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#dvPregunta15>div{
+   border: 1px solid black;
+}
+
+#respuestaPregunta_15 {
+    height: 200px;
+    text-align: justify;
+}
+/*Quiz details*/
+
+/*Reporte de detalle de encuestas*/
+
+/*Reporte Resumen satisfaccion usuarios*/
+#tblResumenSatisfaccionUsuarios table, #tblResumenSatisfaccionUsuarios th, #tblResumenSatisfaccionUsuarios td {
+    border: 1px solid black;
+}
+
+#btnExportarExcelResumen,#dvResumenSatisfaccionUsuarios{
+    display: none;
+}
+/*Reporte Resumen satisfaccion usuarios*/

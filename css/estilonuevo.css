@@ -1,0 +1,28 @@
+.taminputs{
+	
+	width:165px;
+	text-transform: uppercase;
+}
+.taminputs2{
+	
+	width:250px;
+	text-transform: uppercase;
+}
+
+.rotulo{
+	width:13px;	
+	
+}
+
+.input-des {
+    color: #333;
+    background-color: #eee;
+    border-color: #ccc;
+    cursor: not-allowed;
+    text-transform: uppercase;
+}
+
+.taminputsuni{
+	width:100px;
+	text-transform: uppercase;
+}

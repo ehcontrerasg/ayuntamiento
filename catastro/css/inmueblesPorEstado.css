@@ -1,0 +1,91 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: pink;
+}
+
+#parametros{
+    background-color: #d6d7d8;
+    height: 150px;
+    width: 100%;
+    /*position:fixed;*/
+}
+
+#parametros input[type="text"]{
+    width: 30px;
+}
+
+#divProceso input[type="text"] {
+    width: 100%;
+}
+
+#divEstado input[type="text"] {
+    width: 100%;
+}
+
+#divUsoActividad{
+    width: 15%;
+}
+
+#divUsoActividad input[type="text"] {
+    width: 100%;
+}
+#selectUso,#selectProyecto{
+    margin-top: 16%;
+}
+#selectServicio{
+    margin-top: 26%;
+}
+#selectActividad{
+    margin-top: 2%;
+}
+
+#divManzana input[type="text"] {
+    width: 100%;
+}
+
+#parametros .titulo{
+    text-align:  center;
+}
+#btnGenerarReporte{
+    margin-top: 6%;
+}
+
+#divProceso,
+#divEstado,
+#divUsoActividad,
+#divManzana{
+
+    width: 120px;
+}
+
+#divServicio{
+    margin-left: 15%;
+}
+
+#cabecera{
+    background-color: #A349A3;
+    color: #FFFFFF;
+    font-size: 12px;
+    width: 100%;
+    margin-top: -5px;
+    text-align: center;
+}
+
+#dataTable{
+
+    margin-top: 50px;
+    display: none;
+}
+
+#btnExportarExcel{
+    display: none;
+}
+
+#tablaExportar{
+    display: none;
+}
+
+#dataTable thead tr th{
+    width: 40%;
+}

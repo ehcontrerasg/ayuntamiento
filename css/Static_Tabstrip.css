@@ -1,0 +1,315 @@
+    /**
+    * o------------------------------------------------------------------------------o
+    * | This package is licensed under the Phpguru license. A quick summary is       |
+    * | that for commercial use, there is a small one-time licensing fee to pay. For |
+    * | registered charities and educational institutes there is a reduced license   |
+    * | fee available. You can read more  at:                                        |
+    * |                                                                              |
+    * |                  http://www.phpguru.org/static/license.html                  |
+    * o------------------------------------------------------------------------------o
+    *
+    * © Copyright 2008,2009 Richard Heyes
+    */
+
+/**
+* Generic tabstrip styles
+*/
+body {
+	background-color:#FFFFFF;
+}
+@charset "utf-8";
+div.tabstrip {
+    position: relative;	
+    border-bottom: 1px solid #DADADA; /* Linea divide pestañas con bloque*/
+}
+
+div.tabstrip div.tabstrip_tab {
+    position: relative; /*Separa pestañas*/
+    top: -2px;
+    top: expression(2); /*Posicion de pestaña*/
+    display:inline; /*Muestra las pestañas en linea recta*/
+    width: 120px; /* Largo de pestañas*/
+    height: 25px; /* ancho de pestañas inactivas */    
+    border-bottom: 1;
+    margin: 0 2px 0 0; /*separacion entre pestañas*/
+    padding: 5px;
+    padding: expression(0); /*division texto de pestaña*/
+    padding-top: expression(4); /*Posicion vertical texto de la pestaña*/
+    text-align: center; /*Posicion horizontal texto pestañas*/
+    font-size: 11px; /*tamaño fuente de pestañas*/   
+    font-family: Tahoma; /*fuente pestañas*/  
+	/*border-bottom:	url(tableftJ.gif) no-repeat right top;*/
+    background: url(boton_off1.png) no-repeat right top;         
+}
+
+div.tabstrip div.tabstrip_tab.active {
+    position: relative;
+    top: -1px;
+    top: expression(3); /*Posicion pestaña activa*/
+    border: 1px solid white; /*borde pestaña activa*/
+    border-bottom: 1px solid white; /*borde bajo de la pestaña activa*/	
+    background-color: white; /*fondo pestaña activa*/
+    height: 28px; /*ancho pestaña activa*/
+	background: url(wbg.png) right top;
+
+}
+
+div.tabstrip div.tabstrip_tab a {
+    text-decoration:none; /*decorado texto pestañas*/
+    color: white; /*color fuente pestañas inactivas*/
+    font-weight:bold; /*estilo fuente, negrita, cursiva etc pestañas inactivas*/
+}
+
+div.tabstrip div.tabstrip_tab.active a {
+    font-weight: bold; /*estilo fuente, negrita, cursiva etc pestaña activa*/    
+    z-index: 3;	
+    position: relative;		
+    color:black;			
+}
+
+div.tab_body {
+    border: 0px solid black; /*borde del cuadro*/
+    position: relative;
+    padding: 15px;
+    top: -1px; /*posicion del cuadro*/
+    z-index: -1;
+}
+
+
+.anexo {     
+	border-color:white;
+	TEXT-DECORATION: none;
+	font-family: Tahoma;
+	font-size: 11px;	
+}
+
+.tableup {
+	border-top:double;
+	border-left:double;
+	border-right:double;
+	width:100%;
+}
+
+.tablemid {
+	border-left:double;
+	border-right:double;
+	width:100%;
+}
+
+.tabledown {
+	border-bottom:double;
+	border-left:double;
+	border-right:double;
+	width:100%;
+}
+
+
+.cabecera{
+	background:url(../images/fhbg.gif); 
+	color:#000000; 
+	text-align:center; 
+	font-size:11px; 
+	font-family:Tahoma;
+	height:20px;
+}
+
+.cabecera2{
+	background:url(../images/fhbg.gif); 
+	color:#000000; 
+	text-align:left; 
+	font-size:11px; 
+	font-family:Arial, Helvetica, sans-serif;
+	height:20px;
+	font-weight:bold;
+}
+
+.row{
+	text-align:center; 
+	font-size:11px; 
+	font-family:Arial, Helvetica, sans-serif; 
+	color:#000000;
+}
+
+.textbox {
+	font-family: Tahoma;
+	font-size: 11px;
+	color:black;
+	text-align:center;
+}
+
+.textarea {
+	font-family: Tahoma;
+	font-size: 11px;
+	color:black;
+	text-align:left;
+}
+
+.textlabel {
+	font-family: Tahoma;
+	font-size: 12px;
+	color:rgb(108,108,108);
+	text-align:left;
+	font-weight: normal;
+}
+
+.titulo_busqueda {
+	font-family:Tahoma;	
+	font-size: 11px;	
+	color:rgb(51,51,51);
+	text-align: right;
+}
+
+.boton {
+	font-family: Tahoma;	
+	font-size: 12px;
+	color:#333333;
+	text-align: center;
+}
+
+.botondes {
+	font-family: Tahoma;	
+	font-size: 12px;
+	color:#FFF;
+	background-color:#999;
+	border:medium;
+	background-color:transparent;
+	text-align: center;
+}
+
+.camposob {
+	font-family: Tahoma;	
+	font-size: 12px;
+	color:#003366;
+	text-align: center;
+	font-style:italic;
+}
+
+.titulo {
+	background:url(../imagenes/wbg.gif); 
+	font-family:Arial, Helvetica, sans-serif; 
+	font-size:11px; 
+	color:#000000;
+	height:22px;
+	font-weight:bold;
+}
+
+/*
+
+
+
+
+
+.texticol {
+	font-family: Tahoma;	
+	font-size: 11px;
+	font-style:italic;	
+	color:black;
+	text-align: left;
+}
+
+
+.texticoleft {
+	font-family: Tahoma;	
+	font-size: 11px;
+	font-style:italic;	
+	color:#003300;
+	font-weight:bold;
+	text-align: left;
+}
+
+.texticoa {
+	font-family: Tahoma;	
+	font-size: 10px;	
+	color:#000000;
+	text-align: left;
+	top:auto;
+}
+.excel {
+	font-family: Tahoma;	
+	font-size: 9px;
+	font-style:italic;	
+	color:red;
+	text-align: center;
+}
+
+.textd {
+	font-family: Tahoma;	
+	font-size: 11px;
+	color:#003366;
+	text-align: center;
+}
+.textda {
+	font-family: Tahoma;	
+	font-size: 10px;
+	font-weight:bold;
+	color:#003300;
+	text-align: left;
+}
+.textdd {
+	font-family: Tahoma;	
+	font-size: 11px;
+	color:black;
+	text-align: center;
+}
+
+.text {
+	font-family: Tahoma;
+	font-size: 12px;
+	color:#339933;
+	text-align:left;
+}
+.ocultos{
+	font-family: Tahoma;	
+	font-size: 11px;
+	border:none; 
+	background-color:#EFEFEF;
+	font-weight:bold;	
+}
+.ocultosa{
+	font-family: Tahoma;	
+	font-size: 11px;
+	border:none; 
+	background-color:#EFEFEF;
+	font-weight:bold;
+	
+}
+.ocultosb{
+	font-family: Tahoma;	
+	font-size: 11px;
+	border:none; 
+	background-color:#EFEFEF;
+	font-style:italic;	
+	visibility:hidden;
+}
+.ocultosba{
+	font-family: Tahoma;	
+	font-size: 11px;
+	border:none; 
+	background-color:#EFEFEF;
+	font-style:italic;		
+}
+
+.ocultosc{
+	font-family: Tahoma;	
+	font-size: 11px;
+	border:none; 
+	background-color:#EFEFEF;
+	font-weight:bold;
+	font-style:italic;
+	text-align:center;
+	visibility:hidden;	
+}
+.ocultosd{
+	font-family: Tahoma;	
+	font-size: 11px;
+	border:none; 	
+	font-style:italic;	
+	visibility:hidden;
+}
+.convenciones{
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#FFFFFF;
+	text-align:left;
+}*/
+

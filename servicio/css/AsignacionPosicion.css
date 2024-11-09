@@ -1,0 +1,72 @@
+#dvPosiciones{
+    margin: 27px;
+    background-color: #d3d8dc;
+}
+
+table{
+    width: 100%;
+}
+
+[data-toggle=dropdown]{
+    color: #0b0c0b;
+    background-color: #87c653;
+    border: 2px solid #87c653;
+    font-weight: bold;
+}
+
+.btnDejarDisponible {
+    color: #403c32;
+    background-color: #fbc74f;
+    border: 2px solid #fbc74f;
+    font-weight: bold;
+}
+
+.dropdown-menu
+{
+    position: absolute;
+    transform: translate3d(-260px, -66px, 0px);
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+    background-color: #dcd9d9;
+    width: 253px !important;
+}
+
+.dvAsignarPosicion{
+    padding: 10px;
+    background-color: #dcd9d9;
+}
+
+.btnAsignar{
+    float:right
+}
+.btnNoAsignar
+{
+    float:left
+}
+
+.slcUsuarios{
+    width: 100%;
+    margin-bottom: 15px
+}
+
+.dvAsignarPosicion h5{
+    text-align: center;
+    font-weight: bold;
+
+}
+.dvAsignarPosicion hr{
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 60px solid transparent;
+    border-bottom: 60px solid transparent;
+
+    border-left: 60px solid green;
+}

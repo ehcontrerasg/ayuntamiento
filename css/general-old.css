@@ -1,0 +1,2105 @@
+/* Formularios de reporte */
+.fieldCol {
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    padding: 1em 0;
+    background: #EBEBEB;
+    font-family: sans-serif;
+}
+
+.fieldCol select {
+    padding: 5px 10px;
+}
+.fieldCol input {
+    padding: 3px 10px;
+}
+.fieldCol input[type=submit] {
+    cursor: pointer;
+}
+
+.cabeceraTit{
+    width: 100%;
+    height: 40px;
+    color: #FFFFFF;
+    margin: .87em auto .5em auto;
+    text-align: center;
+    font-size: 18px;
+    font-family: "DejaVu Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+.subCabecera{
+    width: 100%;
+    height: 20px;
+    color: #ffffff;
+    margin: .5em auto;
+    text-align: center;
+    font-size: 0.9em;
+    font-family: "DejaVu Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+body{
+    margin: 0 auto;
+    text-align: center;
+}
+
+/*General*/
+
+.botGeneral{
+    background-color: #22AAE2;
+    color: #051C31;
+}
+
+.botFormGeneralOk{
+    background-color: #5DB75D;
+    border-color: #FFFFFF;
+}
+.botFormGeneralCancel{
+    background-color: #D8534E;
+    border-color: #FFFFFF;
+}
+
+.fondGeneral{
+    background-color: #051C31;
+}
+
+.colGeneral{
+    color:#051C31 ;
+}
+
+
+.titDato{
+    border: 0px solid #051C31;
+    border-radius: 4px;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0em;
+}
+
+.inpDatp{
+    border: 0px solid #051C31;
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    margin-left: 0em;
+}
+
+
+.inpDatp:nth-child(1){
+    *border-radius: 4px;
+    *border-top-left-radius:4px;
+    *border-bottom-left-radius:  4px;
+    *border-left: 1px solid #ccc;
+}
+
+
+.inpDatp:nth-last-child(1){
+    *border-radius: 4px;
+    *border-top-right-radius:4px;
+    *border-bottom-right-radius:  4px;
+    *border-right: 1px solid #ccc;
+}
+
+.contenido{
+    width: 96.4%;
+    margin: 0 auto;
+}
+
+.inpDatp input{
+    width: 101.1%;
+    height: 2.55em;
+    *border-radius: 0.5em;
+    font-size: .8em;
+    padding: .1em;
+    border: 1px solid transparent;
+    *border-color: rgb(169, 169, 169);
+}
+
+.inpDatp textarea{
+    width: 100%;
+    height: 6em;
+    *border-radius: 0.5em;
+    font-size: .8em;
+    padding: .1em;
+    border: 1px solid transparent;
+    *border-color: rgb(169, 169, 169);
+}
+
+.inpDatp input:read-only {
+    background-color: #EEEEEE;
+    cursor: not-allowed;
+}
+
+.floatR{
+    float: right;
+}
+
+.floatL{
+    float: left;
+}
+
+.inpDatp select{
+    width: 101.1%;
+    height: 2.55em;
+    *border-radius: 0.5em;
+    font-size: .8em;
+    padding: .1em;
+    border: 1px solid transparent;
+    *border-color: rgb(169, 169, 169);
+}
+
+.botonFormulario{
+    margin-top: .5em;
+    margin-right: .2em;
+    margin-left: .2em;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    color: #ffffff;
+    border: 1px solid transparent;
+}
+
+
+.botonAgr{
+    padding: 3px 5px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    color: #ffffff;
+    border: 1px solid transparent;
+}
+.datoForm{
+    display: table;
+
+}
+
+.col2{
+    width: 50%;
+    float: left;
+}
+
+.col1{
+    width: 100%;
+}
+
+.col3{
+    width: 33.3333%;
+}
+
+.datoForm span{
+    display: table-cell;
+    font-size: 14px;
+    padding: 3px 7px 3px 2px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: right;
+    *background-color: #eee;
+    white-space: nowrap;
+    vertical-align: middle;
+    height: 2em;
+    font-weight: bolder;
+}
+
+
+
+/*las columnas de una pagina se divide en 12 el numero de cada clase significa cuantas de estas columnas ocupara el objeto*/
+.numCont12{
+    width: 100%;
+}
+.numCont11{
+    width: 91.66666666%;
+}
+.numCont10{
+    width: 83.33333333%;
+}
+
+.numCont9{
+    width: 75%;
+}
+
+.numCont8{
+    width: 66.66666666%;
+}
+
+.numCont7{
+    width: 58.3333333%;
+}
+.numCont6{
+    width: 50%;
+}
+
+.numCont5{
+    width: 41.66666%;
+}
+
+.numCont4{
+    width: 33.3333%;
+}
+.numCont3{
+    width: 25%;
+}
+
+.numCont2{
+    width: 16.6666%;
+}
+
+.numCont1{
+    width: 8.333333%;
+}
+
+
+.btn-info{
+    /*color:#fff;
+    background-color:#5bc0de;
+    border-color:#46b8da;*/
+}
+.btn{
+    display:inline-block;
+    padding:6px 12px;
+    margin-bottom:0;
+    font-size:14px;
+    font-weight:400;
+    line-height:1.42857143;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:middle;
+    cursor:pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    background-image:none;
+    border:1px solid transparent;
+    border-radius:4px;
+    background:linear-gradient(#D8D8D8,#FFFFFF,#FFFFFF,#D8D8D8);
+
+}
+
+.listaItems{
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F5F5F5), color-stop(1, #DEDEDE));
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    display: -webkit-inline-box;
+}
+
+.tituloTabla{
+    width: 99%;
+    min-width:300px ;
+    margin: .87em auto .5em auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F5F5F5), color-stop(1, #DEDEDE));
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    padding:6px 0px;
+    text-align: left;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding-left: 1%;
+}
+
+.contenedor-tabla{
+    width: 99%;
+    height:70%;
+    font: normal 12px/150% Arial, Helvetica, sans-serif;
+    background: #fff;
+    overflow: hidden;
+    border: 1px solid #C2C2C2;
+    margin: 0 auto;
+}
+
+.cuerpo-tabla{
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+    height: 91%;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+th {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #F5F5F5), color-stop(1, #DEDEDE) );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#F5F5F5', endColorstr='#DEDEDE');
+    background-color: #F5F5F5;
+    color: #000000 !important;
+    font-size: 11px;
+    font-weight: normal;
+    border-left: 1px solid #A3A3A3;
+    /*padding: 5px 10px;*/
+    border: none;
+    border-right: 1px solid #DEDEDE;
+    text-align: center;
+}
+
+td {
+    border: 1px solid #DEDEDE;
+    text-align: center;
+    /*color: #7D7D7D;*/
+    /*padding: 4px 10px;*/
+    font-size: 11px;
+    font-weight: normal;
+}
+
+.contenedor-flexy{
+    margin: 1em auto 0 0;
+    display: inline-block;
+}
+
+
+.contenedor-flexy2{
+    display: flex;
+    float: left;
+    width: 50%;
+}
+
+
+.contenedor-mapa{
+    display: flex;
+    float: left;
+    width: 50%;
+    height: 300px;
+}
+
+.desh{
+    color: #808080;
+}
+
+.conPdf{
+    height: 350px;
+    width: 100%;
+    margin-top: 5px;
+}
+
+.inpDatp textarea{
+    width: 100%;
+    height: 6em;
+    border-radius: 0.5em;
+    font-size: .8em;
+    padding: .1em;
+    border: 1px solid transparent;
+    border-color: rgb(169, 169, 169);
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.butReportes{
+    width: 11.5em;
+    height:5em;
+    float: left;
+    margin: .65em .4em;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 0.3em;
+    text-align: center;
+    background:linear-gradient(#D8D8D8,#FFFFFF,#FFFFFF,#D8D8D8);
+
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    transition:all 0.3s ease;
+}
+
+.input{
+    font:bold 11px Verdana, sans-serif;
+    color:#666666;
+    border:none;
+    vertical-align:bottom;
+}
+
+.divinfo{
+    float: left;
+    *width: 21%;
+    height: 30px;
+    margin: 0px;
+    flex-basis: 25%;
+
+}
+.divinfo-btn {
+    margin: 0 auto;
+    padding-top: 1em;
+}
+
+ .divinfo label {
+    font-weight: bold;
+    color: #404040;
+ }
+label{
+    color: #000000;
+    padding: 3px;
+    float:left;
+}
+
+
+.butReportes:hover{
+    border-radius: 1em;
+    color: #000000;
+    cursor: pointer;
+}
+
+.fieldset{
+    *float: left;
+    min-width: 1200px;
+    border:solid;
+    border-width:1px;
+}
+
+#LegDetConDatInmCod {
+    padding: 0 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+#detContent {
+    display: flex;
+    flex-shrink: 1;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+}
+#butActDat {
+    padding: 5px 10px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background: #000040;
+    cursor: pointer;
+}
+
+/*menu acordion*/
+
+ul {
+    list-style-type: none;
+}
+
+/** =======================
+ * Contenedor Principal acordion servCli
+ ===========================*/
+
+h1 a .accordionSerCli{
+    color: #000040;
+    font-size: 16px;
+}
+
+.accordionSerCli {
+    padding: 0;
+    margin: 0 auto;
+    background:#F2F2F2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.accordionSerCli .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionSerCli li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordionSerCli li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionSerCli li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordionSerCli li.open .link {
+    color:#000040;
+}
+
+.accordionSerCli li.open i {
+    color: #000040;
+}
+.accordionSerCli li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+
+/** =======================
+ * Contenedor Principal acordion caasd
+ ===========================*/
+
+h1 a .accordionCaasd{
+    color: #0E36D4;
+    font-size: 16px;
+}
+
+.accordionCaasd {
+    padding: 0;
+    margin: 0 auto;
+    background:#F2F2F2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.accordionCaasd .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionCaasd li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordionCaasd li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionCaasd li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordionCaasd li.open .link {
+    color:#0E36D4;
+}
+
+.accordionCaasd li.open i {
+    color: #0E36D4;
+}
+.accordionCaasd li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+
+
+/** =======================
+ * Contenedor Principal acordion grandes clientes
+ ===========================*/
+
+h1 a .accordionGraCli{
+    color: #B51604;
+    font-size: 16px;
+}
+
+.accordionGraCli {
+    padding: 0;
+    margin: 0 auto;
+    background:#F2F2F2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.accordionGraCli .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionGraCli li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordionGraCli li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionGraCli li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordionGraCli li.open .link {
+    color:#B51604;
+}
+
+.accordionGraCli li.open i {
+    color: #B51604;
+}
+.accordionGraCli li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+/** =======================
+ * Contenedor Principal acordion gerencial
+ ===========================*/
+
+h1 a .accordionGer{
+    color: #008B8E;
+    font-size: 16px;
+}
+
+.accordionGer {
+    padding: 0;
+    margin: 0 auto;
+    background:#F2F2F2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.accordionGer .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionGer li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordionGer li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionGer li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordionGer li.open .link {
+    color:#008B8E;
+}
+
+.accordionGer li.open i {
+    color: #008B8E;
+}
+.accordionGer li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/** =======================
+ * Contenedor Principal acordion corte
+ ===========================*/
+
+h1 a .accordionCorte{
+    color: #88A247;
+    font-size: 16px;
+}
+
+.accordionCorte {
+    padding: 0;
+    margin: 0 auto;
+    background:#F2F2F2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.accordionCorte .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionCorte li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordionCorte li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionCorte li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordionCorte li.open .link {
+    color:#88A247;
+}
+
+.accordionCorte li.open i {
+    color: #88A247;
+}
+.accordionCorte li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+/** =======================
+ * Contenedor Principal acordion catastro
+ ===========================*/
+
+h1 a .accordionCat{
+    color: #A349A3;
+    font-size: 16px;
+}
+
+.accordionCat{
+    padding: 0;
+    margin: 0 auto;
+    background:#F2F2F2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.accordionCat .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionCat li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordionCat li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionCat li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordionCat li.open .link {
+    color:#A349A3;
+}
+
+.accordionCat li.open i {
+    color: #A349A3;
+}
+.accordionCat li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}/** =======================
+ * Contenedor Principal RECAUDO
+ ===========================*/
+
+h1 a .accordionRec{
+    color: #FF8000;
+    font-size: 16px;
+}
+
+.accordionRec{
+    padding: 0;
+    margin: 0 auto;
+    background:#F2F2F2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.accordionRec .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionRec li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordionRec li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionRec li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordionRec li.open .link {
+    color:#FF8000;
+}
+
+.accordionRec li.open i {
+    color: #FF8000;
+}
+.accordionRec li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/** =======================
+ * Contenedor Principal Medidor
+ ===========================*/
+
+h1 a .accordionMed{
+    color: #7F1B3F;
+    font-size: 16px;
+}
+
+.accordionMed{
+    padding: 0;
+    margin: 0 auto;
+    background:#F2F2F2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.accordionMed .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #4D4D4D;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionMed li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordionMed li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionMed li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordionMed li.open .link {
+    color:#7F1B3F;
+}
+
+.accordionMed li.open i {
+    color: #7F1B3F;
+}
+.accordionMed li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+/** =======================
+ * Contenedor Principal Archivo
+ ===========================*/
+
+h1 a .accordionArc{
+    color: #8A2908;
+    font-size: 16px;
+}
+
+.accordionArc{
+    padding: 0;
+    margin: 0 auto;
+    background:#F2F2F2;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.accordionArc .link {
+    cursor: pointer;
+    display: block;
+    padding: 15px 15px 15px 42px;
+    color: #8A2908;
+    font-size: 14px;
+    font-weight: 700;
+    border-bottom: 1px solid #CCC;
+    position: relative;
+    text-align: left;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionArc li:last-child .link {
+    border-bottom: 0;
+}
+
+.accordionArc li i {
+    position: absolute;
+    top: 16px;
+    left: 12px;
+    font-size: 18px;
+    color: #595959;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.accordionArc li i.fa-chevron-down {
+    right: 12px;
+    left: auto;
+    font-size: 16px;
+}
+
+.accordionArc li.open .link {
+    color:#8A2908;
+}
+
+.accordionArc li.open i {
+    color: #8A2908;
+}
+.accordionArc li.open i.fa-chevron-down {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+
+/**
+ * Submenu
+ -----------------------------*/
+.submenu {
+    padding: 10px 5px;
+    display: none;
+    background: #e4e4e4;
+    font-size: 14px;
+}
+
+.submenu li {
+    border-bottom: 1px solid #4b4a5e;
+}
+
+.submenu a {
+    display: block;
+    text-decoration: none;
+    color: #d9d9d9;
+    padding: 12px;
+    padding-left: 42px;
+    -webkit-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+
+
+/*especificos corte*/
+
+
+.botCorte{
+    border-color:#88A247;
+    color: #88A247;
+}
+
+.botFormCorte{
+    background-color: #88A247;
+    border-color: #88A247;
+}
+
+.fondCorte{
+    background-color: #88A247;
+}
+.fondGerencia {
+    background-color: #008B8E;
+}
+
+.colCorte{
+    color:#88A247 !important;
+}
+
+/*especificos gerencial*/
+
+
+.botGer{
+    border-color:#008B8E;
+    color: #008B8E;
+}
+
+.botFormGer{
+    background-color: #008B8E;
+    border-color: #008B8E;
+}
+
+.fondGer{
+    background-color: #008B8E;
+}
+
+.colGer{
+    color:#008B8E ;
+}
+
+/*especificos recaudo*/
+
+
+.botRec{
+    border-color:#FF8000;
+    color: #FF8000;
+}
+
+.botFormRec{
+    background-color: #FF8000;
+    border-color: #FF8000;
+}
+
+.fondRec{
+    background-color: #FF8000;
+}
+
+.colRec{
+    color:#FF8000 ;
+}
+
+/*especificos caasdenlinea*/
+
+
+.botCassd{
+    border-color:#0E36D4;
+    color: #0E36D4;
+}
+
+.botFormCassd{
+    background-color: #0E36D4;
+    border-color: #0E36D4;
+}
+
+.fondCassd{
+    background-color: #0E36D4;
+}
+
+.colCassd{
+    color:#0E36D4 ;
+}
+
+/*especificos medidores*/
+
+
+.botMed{
+    border-color:#7F1B3F;
+    color: #7F1B3F;
+}
+
+.botFormMed{
+    background-color: #7F1B3F;
+    border-color: #7F1B3F;
+}
+
+.fondMed{
+    background-color: #7F1B3F;
+}
+
+.colMed{
+    color:#7F1B3F;
+}
+
+/*especificos facturracion*/
+
+
+.botFac{
+    border-color:#336699;
+    color: #336699;
+}
+
+.tabber {
+}
+
+.botFormFac{
+    background-color: #336699;
+    border-color: #336699;
+}
+
+.fondFac{
+    background-color: #336699;
+}
+
+.colFac{
+    color:#336699;
+}
+
+/*especificos catastro*/
+
+
+.botCat{
+    border-color:#A349A3;
+    color: #A349A3;
+}
+
+
+.botFormCat{
+    background-color: #A349A3;
+    border-color: #A349A3;
+}
+
+.fondCat{
+    background-color: #A349A3;
+}
+
+.colCat{
+    color:#A349A3;
+}
+
+
+/*especificos grandes clientes*/
+
+
+.botGraCli{
+    border-color:#B51604;
+    color: #B51604;
+}
+
+
+.botFormGraCli{
+    background-color: #B51604;
+    border-color: #B51604;
+}
+
+.fondGraCli{
+    background-color: #B51604;
+}
+
+.colGraCli{
+    color:#B51604;
+}
+
+/*COL NUMEROS*/
+
+.colRojo{
+    color:#FF0000;
+}
+
+
+/*especificos servicio clientes*/
+
+
+.botSerCli{
+    border-color:#000040;
+    color: #000040;
+}
+
+
+.botFormSerCli{
+    background-color: #000040;
+    border-color: #000040;
+}
+
+.fondSerCli{
+    background-color: #000040;
+}
+
+.colSerCli{
+    color:#000040;
+}
+
+/*especificos archivo*/
+
+
+.botArc{
+    border-color:#8A2908;
+    color: #8A2908;
+}
+
+.botFormArc{
+    background-color: #8A2908;
+    border-color: #8A2908;
+}
+
+.fondArc{
+    background-color: #8A2908;
+}
+
+.colArc{
+    color:#8A2908;
+}
+
+
+
+/*tabeer pestañas de consulta general*/
+
+
+/* $Id: example.css,v 1.5 2006/03/27 02:44:36 pat Exp $ */
+
+/*--------------------------------------------------
+  REQUIRED to hide the non-active tab content.
+  But do not hide them in the print stylesheet!
+  --------------------------------------------------*/
+.tabberliveFac .tabbertabhide,.tabberliveMed .tabbertabhide,.tabberliveCor .tabbertabhide,
+.tabberliveCaasd .tabbertabhide,.tabberliveCat .tabbertabhide ,.tabberliveRec .tabbertabhide,
+.tabberliveGer .tabbertabhide,.tabberliveGraCli .tabbertabhide,.tabberliveSerCli .tabbertabhide {
+    display:none;
+}
+
+/*--------------------------------------------------
+  .tabber = before the tabber interface is set up
+  .tabberlive = after the tabber interface is set up
+  --------------------------------------------------*/
+.tabber {
+}
+
+/*taber gen*/
+.tabberliveFac,.tabberliveMed,.tabberliveCor,.tabberliveCaasd,.tabberliveCat,.tabberliveRec
+,.tabberliveGer,.tabberliveGraCli,.tabberliveSerCli {
+    margin-top:1em;
+}
+
+ul.tabbernavFac li,ul.tabbernavMed li,ul.tabbernavCor li,ul.tabbernavCaasd li,ul.tabbernavCat li,ul.tabbernavRec li
+,ul.tabbernavGer li,ul.tabbernavGraCli li,ul.tabbernavSerCli li
+{
+    list-style: none;
+    margin: 0;
+    display: inline;
+
+}
+
+ul.tabbernavFac li a:link,ul.tabbernavMed li a:link,ul.tabbernavCor li a:link
+,ul.tabbernavCaasd li a:link,ul.tabbernavCat li a:link,ul.tabbernavRec li a:link
+,ul.tabbernavGer li a:link,ul.tabbernavGraCli li a:link,ul.tabbernavSerCli li a:link { color: #FFFFFF; }
+
+ul.tabbernavFac li a:visited,ul.tabbernavMed li a:visited,ul.tabbernavCor li a:visited
+,ul.tabbernavCaasd li a:visited,ul.tabbernavCat li a:visited,ul.tabbernavRec li a:visited
+,ul.tabbernavGer li a:visited,ul.tabbernavGraCli li a:visited,ul.tabbernavSerCli li a:visited { color: #667; }
+
+/* If desired, hide the heading since a heading is provided by the tab */
+.tabberliveFac .tabbertab h2,.tabberliveMed .tabbertab h2,.tabberliveCor .tabbertab h2
+,.tabberliveCaasd .tabbertab h2,.tabberliveCat .tabbertab h2,.tabberliveRec .tabbertab h2
+,.tabberliveGer .tabbertab h2,.tabberliveGraCli .tabbertab h2,.tabberliveSerCli .tabbertab h2  {
+    display:none;
+}
+.tabberliveFac .tabbertab h3,.tabberliveMed .tabbertab h3,.tabberliveCor .tabbertab h3
+,.tabberliveCaasd .tabbertab h3,.tabberliveCat .tabbertab h3,.tabberliveRec .tabbertab h3
+,.tabberliveGer .tabbertab h3,.tabberliveGraCli .tabbertab h3,.tabberliveSerCli .tabbertab h3 {
+    display:none;
+}
+
+/* Example of using an ID to set different styles for the tabs on the page */
+.tabberliveFac#tab1,.tabberliveMed#tab1,.tabberliveCor#tab1
+,.tabberliveCaasd#tab1,.tabberliveCat#tab1,.tabberliveRec#tab1,.tabberliveGer#tab1,.tabberliveGraCli#tab1,.tabberliveSerCli#tab1 {
+}
+.tabberliveFac#tab2,.tabberliveMed#tab2,.tabberliveCor#tab2
+,.tabberliveCaasd#tab2,.tabberliveCat#tab2,.tabberliveRec#tab2,.tabberliveGer#tab2
+,.tabberliveGraCli#tab2,.tabberliveSerCli#tab2 {
+}
+.tabberliveFac#tab2 .tabbertab,.tabberliveMed#tab2 .tabbertab,.tabberliveCor#tab2 .tabbertab
+,.tabberliveCaasd#tab2 .tabbertab,.tabberliveCat#tab2 .tabbertab,.tabberliveRec#tab2 .tabbertab
+,.tabberliveGer#tab2 .tabbertab,.tabberliveGraCli#tab2 .tabbertab,.tabberliveSerCli#tab2 .tabbertab {
+    height:200px;
+    overflow:auto;
+}
+
+
+
+/*--------------------------------------------------
+  ul.tabbernav = the tab navigation list
+  li.tabberactive = the active tab
+  --------------------------------------------------*/
+/*taber catastro*/
+ul.tabbernavCat
+{
+    margin:0;
+    padding: 3px 0;
+    border-bottom: 1px solid #A349A3;
+    font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernavCat li a
+{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #A349A3;/*color borde pesta�as*/
+    border-bottom: none;
+    background:linear-gradient(#333333,#A349A3);
+    /*background: #336699; /*color pesta�as inactivas dde*/
+    text-decoration: none;
+}
+
+ul.tabbernavCat li a:hover
+{
+    color:#FFFFFF; /*color letras pesta�as inactivas cuando pasa el mouse*/
+    /*background: #DDE; /*color fondo pesta�as inactivas cuando pasa el mouse*/
+    background: linear-gradient(#A349A3, #A349A3);
+    border-color: #828;
+}
+
+ul.tabbernavCat li.tabberactive a
+{
+    background: #fff; /*color fondo pesta�a activa*/
+    border-bottom: 1px solid #fff;
+    color: #A349A3;
+}
+
+ul.tabbernavCat li.tabberactive a:hover
+{
+    color:#A349A3;/*color letra pesta�a activa cuando pasa el mouse*/
+    background: white;/*color fondo pesta�a activa cuando pasa el mouse*/
+    border-bottom: 1px solid white;
+}
+
+.tabberliveCat .tabbertab {
+    padding:5px;
+    border:1px solid #A349A3;
+    border-top:0;
+
+    /* If you don't want the tab size changing whenever a tab is changed
+       you can set a fixed height */
+
+    /* height:200px; */
+
+    /* If you set a fix height set overflow to auto and you will get a
+       scrollbar when necessary */
+
+    /* overflow:auto; */
+}
+
+/*taber grandes clientes*/
+ul.tabbernavGraCli
+{
+    margin:0;
+    padding: 3px 0;
+    border-bottom: 1px solid #B51604;
+    font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernavGraCli li a
+{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #B51604;/*color borde pesta�as*/
+    border-bottom: none;
+    background:linear-gradient(#333333,#B51604);
+    /*background: #336699; /*color pesta�as inactivas dde*/
+    text-decoration: none;
+}
+
+ul.tabbernavGraCli li a:hover
+{
+    color:#FFFFFF; /*color letras pesta�as inactivas cuando pasa el mouse*/
+    /*background: #DDE; /*color fondo pesta�as inactivas cuando pasa el mouse*/
+    background: linear-gradient(#B51604, #B51604);
+    border-color: #900;
+}
+
+ul.tabbernavGraCli li.tabberactive a
+{
+    background: #fff; /*color fondo pesta�a activa*/
+    border-bottom: 1px solid #fff;
+    color: #B51604;
+}
+
+ul.tabbernavGraCli li.tabberactive a:hover
+{
+    color:#B51604;/*color letra pesta�a activa cuando pasa el mouse*/
+    background: white;/*color fondo pesta�a activa cuando pasa el mouse*/
+    border-bottom: 1px solid white;
+}
+
+.tabberliveGraCli .tabbertab {
+    padding:5px;
+    border:1px solid #B51604;
+    border-top:0;
+
+    /* If you don't want the tab size changing whenever a tab is changed
+       you can set a fixed height */
+
+    /* height:200px; */
+
+    /* If you set a fix height set overflow to auto and you will get a
+       scrollbar when necessary */
+
+    /* overflow:auto; */
+}
+
+/*taber gerencial*/
+ul.tabbernavGer
+{
+    margin:0;
+    padding: 3px 0;
+    border-bottom: 1px solid #008B8E;
+    font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernavGer li a
+{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #008B8E;/*color borde pesta�as*/
+    border-bottom: none;
+    background:linear-gradient(#333333,#008B8E);
+    /*background: #336699; /*color pesta�as inactivas dde*/
+    text-decoration: none;
+}
+
+ul.tabbernavGer li a:hover
+{
+    color:#FFFFFF; /*color letras pesta�as inactivas cuando pasa el mouse*/
+    /*background: #DDE; /*color fondo pesta�as inactivas cuando pasa el mouse*/
+    background: linear-gradient(#008B8E, #008B8E);
+    border-color: #067;
+}
+
+ul.tabbernavGer li.tabberactive a
+{
+    background: #fff; /*color fondo pesta�a activa*/
+    border-bottom: 1px solid #fff;
+    color: #008B8E;
+}
+
+ul.tabbernavGer li.tabberactive a:hover
+{
+    color:#008B8E;/*color letra pesta�a activa cuando pasa el mouse*/
+    background: white;/*color fondo pesta�a activa cuando pasa el mouse*/
+    border-bottom: 1px solid white;
+}
+
+.tabberliveGer .tabbertab {
+    padding:5px;
+    border:1px solid #008B8E;
+    border-top:0;
+
+    /* If you don't want the tab size changing whenever a tab is changed
+       you can set a fixed height */
+
+    /* height:200px; */
+
+    /* If you set a fix height set overflow to auto and you will get a
+       scrollbar when necessary */
+
+    /* overflow:auto; */
+}
+
+/*taber fac*/
+ul.tabbernavFac
+{
+    margin:0;
+    padding: 3px 0;
+    border-bottom: 1px solid #336699;
+    font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernavFac li a
+{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #336699;/*color borde pesta�as*/
+    border-bottom: none;
+    background:linear-gradient(#333333,#336699);
+    /*background: #336699; /*color pesta�as inactivas dde*/
+    text-decoration: none;
+}
+
+ul.tabbernavFac li a:hover
+{
+    color:#FFFFFF; /*color letras pesta�as inactivas cuando pasa el mouse*/
+    /*background: #DDE; /*color fondo pesta�as inactivas cuando pasa el mouse*/
+    background: linear-gradient(#336699, #336699);
+    border-color: #227;
+}
+
+ul.tabbernavFac li.tabberactive a
+{
+    background: #fff; /*color fondo pesta�a activa*/
+    border-bottom: 1px solid #fff;
+    color: #336699;
+}
+
+ul.tabbernavFac li.tabberactive a:hover
+{
+    color:#336699;/*color letra pesta�a activa cuando pasa el mouse*/
+    background: white;/*color fondo pesta�a activa cuando pasa el mouse*/
+    border-bottom: 1px solid white;
+}
+
+.tabberliveFac .tabbertab {
+    padding:5px;
+    border:1px solid #336699;
+    border-top:0;
+
+    /* If you don't want the tab size changing whenever a tab is changed
+       you can set a fixed height */
+
+    /* height:200px; */
+
+    /* If you set a fix height set overflow to auto and you will get a
+       scrollbar when necessary */
+
+    /* overflow:auto; */
+}
+
+/*taber caasd*/
+ul.tabbernavCaasd
+{
+    margin:0;
+    padding: 3px 0;
+    border-bottom: 1px solid #0E36D4;
+    font: bold 12px Verdana, sans-serif;
+}
+
+
+ul.tabbernavCaasd li a
+{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #0E36D4;/*color borde pesta�as*/
+    border-bottom: none;
+    background:linear-gradient(#333333,#0E36D4);
+    /*background: #336699; /*color pesta�as inactivas dde*/
+    text-decoration: none;
+}
+
+ul.tabbernavCaasd li a:hover
+{
+    color:#FFFFFF; /*color letras pesta�as inactivas cuando pasa el mouse*/
+    /*background: #DDE; /*color fondo pesta�as inactivas cuando pasa el mouse*/
+    background: linear-gradient(#0E36D4, #0E36D4);
+    border-color: #00A;
+}
+
+
+ul.tabbernavCaasd li.tabberactive a
+{
+    background: #fff; /*color fondo pesta�a activa*/
+    border-bottom: 1px solid #fff;
+    color: #0E36D4;
+}
+
+ul.tabbernavCaasd li.tabberactive a:hover
+{
+    color:#0E36D4;/*color letra pesta�a activa cuando pasa el mouse*/
+    background: white;/*color fondo pesta�a activa cuando pasa el mouse*/
+    border-bottom: 1px solid white;
+}
+
+.tabberliveCaasd .tabbertab {
+    padding:5px;
+    border:1px solid #0E36D4;
+    border-top:0;
+
+    /* If you don't want the tab size changing whenever a tab is changed
+       you can set a fixed height */
+
+    /* height:200px; */
+
+    /* If you set a fix height set overflow to auto and you will get a
+       scrollbar when necessary */
+
+    /* overflow:auto; */
+}
+
+/*taber med*/
+
+ul.tabbernavMed
+{
+    margin:0;
+    padding: 3px 0;
+    border-bottom: 1px solid #7F1B3F;
+    font: bold 12px Verdana, sans-serif;
+}
+
+
+ul.tabbernavMed li a
+{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #7F1B3F;/*color borde pesta�as*/
+    border-bottom: none;
+    background:linear-gradient(#333333,#7F1B3F);
+    /*background: #336699; /*color pesta�as inactivas dde*/
+    text-decoration: none;
+}
+
+ul.tabbernavMed li a:hover
+{
+    color:#FFFFFF; /*color letras pesta�as inactivas cuando pasa el mouse*/
+    /*background: #DDE; /*color fondo pesta�as inactivas cuando pasa el mouse*/
+    background: linear-gradient(#7F1B3F, #7F1B3F);
+    border-color: #502;
+}
+
+
+ul.tabbernavMed li.tabberactive a
+{
+    background: #fff; /*color fondo pesta�a activa*/
+    border-bottom: 1px solid #fff;
+    color: #7F1B3F;
+}
+
+ul.tabbernavMed li.tabberactive a:hover
+{
+    color:#7F1B3F;/*color letra pesta�a activa cuando pasa el mouse*/
+    background: white;/*color fondo pesta�a activa cuando pasa el mouse*/
+    border-bottom: 1px solid white;
+}
+
+.tabberliveMed .tabbertab {
+    padding:5px;
+    border:1px solid #7F1B3F;
+    border-top:0;
+
+    /* If you don't want the tab size changing whenever a tab is changed
+       you can set a fixed height */
+
+    /* height:200px; */
+
+    /* If you set a fix height set overflow to auto and you will get a
+       scrollbar when necessary */
+
+    /* overflow:auto; */
+}
+/*taber cor*/
+
+ul.tabbernavCor
+{
+    margin:0;
+    padding: 3px 0;
+    border-bottom: 1px solid #88A247;
+    font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernavCor li a
+{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #88A247;/*color borde pesta�as*/
+    border-bottom: none;
+    background:linear-gradient(#333333,#88A247);
+    /*background: #336699; /*color pesta�as inactivas dde*/
+    text-decoration: none;
+}
+
+ul.tabbernavCor li a:hover
+{
+    color:#FFFFFF; /*color letras pesta�as inactivas cuando pasa el mouse*/
+    /*background: #DDE; /*color fondo pesta�as inactivas cuando pasa el mouse*/
+    background: linear-gradient(#88A247, #88A247);
+    border-color: #593;
+}
+
+
+
+ul.tabbernavCor li.tabberactive a
+{
+    background: #fff; /*color fondo pesta�a activa*/
+    border-bottom: 1px solid #fff;
+    color: #88A247;
+}
+
+ul.tabbernavCor li.tabberactive a:hover
+{
+    color:#88A247;/*color letra pesta�a activa cuando pasa el mouse*/
+    background: white;/*color fondo pesta�a activa cuando pasa el mouse*/
+    border-bottom: 1px solid white;
+}
+
+
+.tabberliveCor .tabbertab {
+    padding:5px;
+    border:1px solid #88A247;
+    border-top:0;
+
+    /* If you don't want the tab size changing whenever a tab is changed
+       you can set a fixed height */
+
+    /* height:200px; */
+
+    /* If you set a fix height set overflow to auto and you will get a
+       scrollbar when necessary */
+
+    /* overflow:auto; */
+}
+
+/*taber rec*/
+
+ul.tabbernavRec
+{
+    margin:0;
+    padding: 3px 0;
+    border-bottom: 1px solid #FF8000;
+    font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernavRec li a
+{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #FF8000;/*color borde pesta�as*/
+    border-bottom: none;
+    background:linear-gradient(#333333,#FF8000);
+    /*background: #336699; /*color pesta�as inactivas dde*/
+    text-decoration: none;
+}
+
+ul.tabbernavRec li a:hover
+{
+    color:#FFFFFF; /*color letras pesta�as inactivas cuando pasa el mouse*/
+    /*background: #DDE; /*color fondo pesta�as inactivas cuando pasa el mouse*/
+    background: linear-gradient(#FF8000, #FF8000);
+    border-color: #E60;
+}
+
+
+
+ul.tabbernavRec li.tabberactive a
+{
+    background: #fff; /*color fondo pesta�a activa*/
+    border-bottom: 1px solid #fff;
+    color: #FF8000;
+}
+
+ul.tabbernavRec li.tabberactive a:hover
+{
+    color:#FF8000;/*color letra pesta�a activa cuando pasa el mouse*/
+    background: white;/*color fondo pesta�a activa cuando pasa el mouse*/
+    border-bottom: 1px solid white;
+}
+
+
+.tabberliveRec .tabbertab {
+    padding:5px;
+    border:1px solid #FF8000;
+    border-top:0;
+
+    /* If you don't want the tab size changing whenever a tab is changed
+       you can set a fixed height */
+
+    /* height:200px; */
+
+    /* If you set a fix height set overflow to auto and you will get a
+       scrollbar when necessary */
+
+    /* overflow:auto; */
+}
+
+/*TABER ARCHIVO*/
+/*taber arc*/
+
+ul.tabbernavArc
+{
+    margin:0;
+    padding: 3px 0;
+    border-bottom: 1px solid #333333;
+    font: bold 12px Verdana, sans-serif;
+}
+
+
+ul.tabbernavArc li a
+{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #333333;/*color borde pesta�as*/
+    border-bottom: none;
+    background:linear-gradient(#333333,#333333);
+    /*background: #336699; /*color pesta�as inactivas dde*/
+    text-decoration: none;
+}
+
+ul.tabbernavArc li a:hover
+{
+    color:#FFFFFF; /*color letras pesta�as inactivas cuando pasa el mouse*/
+    /*background: #DDE; /*color fondo pesta�as inactivas cuando pasa el mouse*/
+    background: linear-gradient(#333333, #333333);
+    border-color: #502;
+}
+
+
+ul.tabbernavArc li.tabberactive a
+{
+    background: #fff; /*color fondo pesta�a activa*/
+    border-bottom: 1px solid #fff;
+    color: #333333;
+}
+
+ul.tabbernavArc li.tabberactive a:hover
+{
+    color:#333333;/*color letra pesta�a activa cuando pasa el mouse*/
+    background: white;/*color fondo pesta�a activa cuando pasa el mouse*/
+    border-bottom: 1px solid white;
+}
+
+.tabberliveArc .tabbertab {
+    padding:5px;
+    border:1px solid #333333;
+    border-top:0;
+
+    /* If you don't want the tab size changing whenever a tab is changed
+       you can set a fixed height */
+
+    /* height:200px; */
+
+    /* If you set a fix height set overflow to auto and you will get a
+       scrollbar when necessary */
+
+    /* overflow:auto; */
+}
+
+
+/*taber servicio clientes*/
+ul.tabbernavSerCli
+{
+    margin:0;
+    padding: 3px 0;
+    border-bottom: 1px solid #000040;
+    font: bold 12px Verdana, sans-serif;
+}
+
+ul.tabbernavSerCli li a
+{
+    padding: 3px 0.5em;
+    margin-left: 3px;
+    border: 1px solid #000040;/*color borde pesta�as*/
+    border-bottom: none;
+    background:linear-gradient(#333333,#000040);
+    /*background: #336699; /*color pesta�as inactivas dde*/
+    text-decoration: none;
+}
+
+ul.tabbernavSerCli li a:hover
+{
+    color:#FFFFFF; /*color letras pesta�as inactivas cuando pasa el mouse*/
+    /*background: #DDE; /*color fondo pesta�as inactivas cuando pasa el mouse*/
+    background: linear-gradient(#000040, #000040);
+    border-color: #000030;
+}
+
+ul.tabbernavSerCli li.tabberactive a
+{
+    background: #fff; /*color fondo pesta�a activa*/
+    border-bottom: 1px solid #fff;
+    color: #000040;
+}
+
+ul.tabbernavSerCli li.tabberactive a:hover
+{
+    color:#000040;/*color letra pesta�a activa cuando pasa el mouse*/
+    background: white;/*color fondo pesta�a activa cuando pasa el mouse*/
+    border-bottom: 1px solid white;
+}
+
+.tabberliveSerCli .tabbertab {
+    padding:5px;
+    border:1px solid #000040;
+    border-top:0;
+
+    /* If you don't want the tab size changing whenever a tab is changed
+       you can set a fixed height */
+
+    /* height:200px; */
+
+    /* If you set a fix height set overflow to auto and you will get a
+       scrollbar when necessary */
+
+    /* overflow:auto; */
+}
+
+/* Estilos para el manejo de los modales minimizables */
+
+.modal.in .modal-dialog {
+    width: 99%;
+}
+.modal-consulta-body {
+    min-height: 450px;
+}
+#modales-line {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    padding: 0 1em;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.modal-window {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    color: white;
+    width: 15%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1em;
+    cursor: pointer;
+    border-radius: 5px 5px 0 0;
+    transition-duration: .3s;
+}
+.modal-window:hover {
+    transform: scale(1.02);
+}
+.modal-window i:hover {
+    opacity: .8;
+}
+.modal-window b {
+    width: 100%;
+    align-self: center;
+}
+
+#minimize-buttom {
+    margin-right: 10px;
+}

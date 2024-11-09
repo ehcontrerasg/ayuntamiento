@@ -1,0 +1,20 @@
+.contenedor{
+    display: flex;
+    background-color: #efefef;
+    border-radius: 8px;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 1%;
+    margin: 1%;
+}
+
+.cabecera{
+    text-align: center;
+    background-color: #008b8e;
+    color: white;
+}
+
+#grupoReportes{
+    display: none;
+}

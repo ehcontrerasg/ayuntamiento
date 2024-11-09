@@ -1,0 +1,29 @@
+p.screenTitle {
+    background-color: #c00f05;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 3px;
+    margin-top: 3px;
+}
+
+#frmCrearUsuario {
+    background-color: #ececec;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px grey;
+    padding: 15px;
+}
+
+/*Remove up/down numer input*/
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+/*End remove up/down numer input*/

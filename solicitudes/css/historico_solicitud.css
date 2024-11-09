@@ -1,0 +1,97 @@
+#header{
+    margin-top: 29px;
+    background-color: #65b333;
+    color: white;
+    font-size: 1.5em;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#dvBuscaSolicitud{
+    padding: 10px;
+    background-color: #cecece;
+    max-width: 80%;
+    text-align: center;
+    margin-left: 10%;
+    border-radius: 5px;
+}
+
+#txtIdSolicitud:valid
+{
+    margin: 0px auto;
+    width: 22%;
+}
+
+#txtIdSolicitud:invalid
+{
+   margin: 0px auto;
+   width: 22%;
+   border-color: red;
+}
+
+
+#btnBuscarSolicitud{
+    margin-left: 10px;
+    width: auto;
+    background-color: #65b333;
+    color: white;
+}
+
+#dvHistoricoSolicitudes
+{
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 60px;
+}
+
+#hTitulo{
+    text-align:  center;
+}
+
+#dvCuerpoHistorico>h3{
+    margin-top: 10px;
+    TEXT-ALIGN: CENTER;
+    font-size: 16px;
+    font-weight: bold;
+}
+#dvCuerpoHistorico>div{
+    box-shadow: 0px 0px 1px 0px;
+}
+
+.ui-state-active{
+    background-color: #65b333;
+    border-color: #65b333;
+
+}
+#txtIdSolicitud{
+    font-size: 16px;
+}
+
+.dvComentario{
+    padding: 10px;
+    box-shadow: 0px 1px 4px 4px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-top: 20px;
+}
+
+.dvComentario>span{
+    float: right;
+    width: 50%;
+}
+
+.pComentarios{
+    text-align: center;
+    color: #65B333;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-size: 20px;
+}
+.ui-accordion-content.ui-corner-bottom.ui-helper-reset.ui-widget-content.ui-accordion-content-active{
+    height: 370px;
+}
+
+.pFechaConclusion
+{
+    margin-top: 25px;
+}

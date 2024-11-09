@@ -1,0 +1,227 @@
+/* CSS Document */
+.cabecera{
+    width: 100%;
+    *min-width:300px ;
+    height: 40px;
+    color: #ffffff;
+    background-color: #FF8000;
+    margin: .87em 0 0 0;
+    text-align: center;
+    font-size: 1.2em;
+    font-family: "DejaVu Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+
+}
+
+.subCabecera{
+    width: 100%;
+    *min-width:300px ;
+    height: 20px;
+    color: #FF8000;
+    background-color: #ffffff;
+    margin: .5em auto;
+    text-align: left;
+    font-size: 12px;
+    font-family: "DejaVu Sans", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    border-radius: 2px;
+}
+
+label{
+    width: 20em;
+    color: #000000;
+    font-weight: bold;
+}
+
+
+body{
+    margin: 0 auto;
+    width: 96.4%;
+    *min-width: 595px;
+    text-align: center;
+}
+
+.formulario{
+    margin: .8em auto;
+    width: 98%;
+    border-color: rgb(163,73,163);
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: .3em;
+}
+
+.divfiltros{
+    width: 100%;
+    min-width: 200px;
+    margin: 0 0;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #EEEEEE;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size:11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    margin: .5em;
+}
+
+input{
+    width: 10m;
+    height: 16px;
+    padding: .2em .2em;
+    border:1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:normal;
+}
+
+select{
+    height: 18px;
+    padding: .2em .2em;
+    border:1px solid #ccc;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:11px;
+    font-weight:normal;
+}
+
+
+.contenedor  button{
+    display:inline-block;
+    padding:6px 12px;
+    margin-bottom:0;
+    font-size:14px;
+    font-weight:400;
+    line-height:1.42857143;
+    text-align:center;
+    white-space:nowrap;
+    vertical-align:middle;
+    cursor:pointer;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    background-image:none;
+    border:1px solid transparent;
+    border-radius:4px;
+    background:linear-gradient(#FF8000,#FF8000,#FF8000,#FF8000);
+    color:#FFFFFF;
+}
+
+.contenedor button:hover,.button:focus{
+    background:linear-gradient(#FFFFFF,#FFFFFF,#FFFFFF,#FFFFFF);
+    border-color:#FF8000;
+    color:#FF8000;
+}
+
+.butReportes{
+    width: 11.5em;
+    height:5em;
+    float: left;
+    margin: .65em .4em;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 0.3em;
+    text-align: center;
+    background:linear-gradient(#D8D8D8,#FFFFFF,#FFFFFF,#D8D8D8);
+    border-color:#A349A3;
+    color: #A349A3;
+    font-size: 1em;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    transition:all 0.3s ease;
+}
+
+.butReportes:hover{
+    border-radius: 1em;
+    color: #000000;
+    cursor: pointer;
+}
+
+.datoForm{
+    display: inline-table;
+    width: 49%;
+
+}
+
+.datoForm span{
+    display: table-cell;
+    font-size: 14px;
+    padding: 3px 7px;
+    font-weight: 400;
+    line-height: 1;
+    color: #555;
+    text-align: left;
+    background-color: #eee;
+
+    width: 1%;
+    white-space: nowrap;
+    vertical-align: middle;
+    height: 2em;
+
+}
+
+.titDato{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    margin-right: 0em;
+}
+
+.inpDatp{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: 0em;
+}
+
+.inpDatp input{
+    width: 14em;
+    height: 2.7em;
+    border-radius: 0.5em;
+    float: right;
+    font-size: .8em;
+    padding: .1em;
+}
+
+.inpDatp select{
+    width: 14.5em;
+    height: 3.05em;
+    border-radius: 0.5em;
+    float: right;
+    font-size: .8em;
+    padding: .1em;
+}
+
+.botonFormulario{
+    background-color: rgb(163,73,163);
+    border-color: rgb(163,73,163);
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 6px;
+    color: #ffffff;
+    border: 1px solid transparent;
+}
+
+span{
+    margin: 0;
+}

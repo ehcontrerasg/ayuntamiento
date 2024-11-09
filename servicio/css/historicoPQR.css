@@ -1,0 +1,18 @@
+.container{
+    padding: 10px;
+    margin-left: 20%;
+}
+#formulario{
+    background-color: #e1e3e8;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#historico_reclamos{
+    margin-top: 10px;
+    margin-left:5%;
+}
+
+#btnBuscarReclamos{
+    margin-left: 10px;
+}

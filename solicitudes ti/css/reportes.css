@@ -1,0 +1,17 @@
+.cabecera {
+	padding: .5em;
+    font-size: 1.2em;
+}
+
+.form-group {
+	margin: 1em .5em;
+	margin-right: 0;
+}
+
+form[name='report_form'] {
+	background-color: #e8e8e8;
+}
+
+section {
+	padding-left: 0;
+}

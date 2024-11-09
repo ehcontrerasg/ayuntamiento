@@ -1,0 +1,30 @@
+div{
+
+    margin-left: 30px;
+}
+
+
+#frmFactAdeSectRut{
+    background-color: #eff0f2;
+}
+
+header
+{
+    background-color: #336699;
+    color:#ffffff;
+    font-weight: bold;
+}
+body{
+    margin:8px;
+}
+
+/*
+#txtSector
+{
+    margin-left: 60px;
+}
+#txtRutaDesde
+{
+    margin-right: 50px;
+    margin-left: 35px;
+}*/
