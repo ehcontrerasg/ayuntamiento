@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once ('../../include.php');
+
 $coduser = $_SESSION['codigo'];
 $cod_inms = ($_GET['inmueble']);
 $id_periodo = ($_GET['periodo']);

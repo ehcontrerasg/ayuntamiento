@@ -1,14 +1,18 @@
-<?
+<?php
 include_once ('../clases/class.PermisosURL.php');
+include_once ('../clases/class.asignacion.php');
+include_once ('../clases/class.proyecto.php');
+include_once ('../clases/class.sector.php');
+include_once ('../clases/class.ruta.php');
+include_once ('../clases/class.periodo.php');
+include_once ('../clases/class.usuario.php');
 $permisos = new PermisosURL();
 $verificarPermisos = $permisos->VerificaPermisos();
 if ($verificarPermisos==true): ?>
 
     <?php
     session_start();
-    include_once ('../include.php');
     include('../destruye_sesion.php');
-
     $coduser = $_SESSION['codigo'];
     $proyecto = $_POST['proyecto'];
     $sector = $_POST['sector'];
@@ -17,9 +21,6 @@ if ($verificarPermisos==true): ?>
     $operario = $_POST['operario'];
     $proc = $_POST['proc'];
 
-//Conectamos con la base de datos
-    $Cnn = new OracleConn(UserGeneral, PassGeneral);
-    $link = $Cnn->link;
     ?>
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml">
@@ -44,55 +45,16 @@ if ($verificarPermisos==true): ?>
 
     if($proc == 1){
         $pendientes=0;
-        $sql1="SELECT COUNT(1) CANTIDAD FROM SGC_TT_ASIGNACION WHERE FECHA_FIN IS NULL AND ANULADO='N'
-	AND ID_SECTOR='$sector' AND ID_RUTA='$ruta' GROUP BY(ID_SECTOR,ID_RUTA)
-	";
-        $stid = oci_parse($link, $sql1);
-        oci_execute($stid, OCI_DEFAULT);
+        $a=new Asignacion();
+        $stid=$a->getCantidadBySectorRuta($sector,$ruta);
         while (oci_fetch($stid)) {
             $pendientes = oci_result($stid, 'CANTIDAD');
         }oci_free_statement($stid);
 
 
         if($pendientes==0){
-            $sql = "SELECT
-    I.ID_ZONA, 
-    I.CODIGO_INM , 
-    I.DIRECCION, 
-    U.DESC_URBANIZACION, 
-    C.CODIGO_CLI, 
-    C.NOMBRE_CLI, 
-    C.TIPO_DOC, 
-    C.DOCUMENTO, 
-    C.TELEFONO, 
-    I.ID_PROCESO, 
-    I.CATASTRO, 
-    A.ID_USO, 
-    A.ID_ACTIVIDAD, 
-    I.TOTAL_UNIDADES, 
-    I.ID_TIPO_CLIENTE, 
-    I.ID_ESTADO, 
-    I.ID_PROYECTO
-FROM 
-    SGC_TT_INMUEBLES I, 
-    SGC_TP_URBANIZACIONES U, 
-    SGC_TT_CLIENTES C, 
-    SGC_TP_ACTIVIDADES A, 
-    SGC_TT_CONTRATOS O
-WHERE  
-    I.CONSEC_URB = U.CONSEC_URB AND 
-    C.CODIGO_CLI(+)= O.CODIGO_CLI AND 
-    I.SEC_ACTIVIDAD = A.SEC_ACTIVIDAD AND 
-    O.CODIGO_INM(+) = I.CODIGO_INM AND 
-    SUBSTR(I.ID_PROCESO,0,2) = '$sector' AND 
-    SUBSTR(I.ID_PROCESO,3,2) = '$ruta' AND 
-    O.FECHA_FIN (+) IS NULL AND 
-    I.ID_ESTADO NOT IN('CB') AND
-    I.CODIGO_INM NOT IN (SELECT EMC.INMUEBLE FROM SGC_TEMP_EXCL_MANT_CAT EMC WHERE EMC.FECHA_FIN>=SYSDATE)
-    ORDER BY ID_PROCESO";
+            $stid=$a->getInmXAsignarBySectorRuta($sector,$ruta);
             //echo $sql;
-            $stid = oci_parse($link, $sql);
-            oci_execute($stid, OCI_DEFAULT);
             while (oci_fetch($stid)) {
                 $zona_inm = oci_result($stid, 'ID_ZONA');
                 $codigo_inm = oci_result($stid, 'CODIGO_INM');
@@ -114,13 +76,7 @@ WHERE
                 if($unidades_inm == ""){
                     $unidades_inm = '0';
                 }
-
-                $query = "INSERT INTO SGC_TT_ASIGNACION
-            (ID_TIPO_RUTA,ID_INMUEBLE,ID_OPERARIO,ID_SECTOR,ID_RUTA,ID_PERIODO,FECHA_ASIG,ID_ASIGNADOR)
-            VALUES(1,'$codigo_inm','$operario','$sector','$ruta','$periodo',sysdate,'$coduser')";
-                $stida = oci_parse($link, $query);
-                $result = @oci_execute($stida);
-                oci_free_statement($stida);
+                $a->insertaAsignacion($codigo_inm,$operario,$sector,$ruta,$periodo,$coduser);
             }oci_free_statement($stid);
         }else{
             echo '<script language="javascript">alert("Error en la asignacion, esta ruta aun tiene pendientes ';
@@ -140,13 +96,11 @@ WHERE
                             <td>
                                 <select name="proyecto" class="textbox" onChange="recarga();" required><option></option>
                                     <?php
-                                    $sql = "SELECT PR.ID_PROYECTO, PR.SIGLA_PROYECTO FROM SGC_TP_PROYECTOS PR, SGC_TT_PERMISOS_USUARIO PU
-						WHERE PR.ID_PROYECTO = PU.ID_PROYECTO AND PU.ID_USUARIO = '$coduser'";
-                                    $stid = oci_parse($link, $sql);
-                                    oci_execute($stid, OCI_DEFAULT);
+                                    $a= new Proyecto();
+                                    $stid=$a->obtenerProyecto($coduser);
                                     while (oci_fetch($stid)) {
-                                        $cod_proyecto = oci_result($stid, 'ID_PROYECTO') ;
-                                        $sigla_proyecto = oci_result($stid, 'SIGLA_PROYECTO') ;
+                                        $cod_proyecto = oci_result($stid, 'CODIGO') ;
+                                        $sigla_proyecto = oci_result($stid, 'DESCRIPCION') ;
                                         if($cod_proyecto == $proyecto) echo "<option value='$cod_proyecto' selected>$sigla_proyecto</option>\n";
                                         else echo "<option value='$cod_proyecto'>$sigla_proyecto</option>\n";
                                     }oci_free_statement($stid);
@@ -157,11 +111,10 @@ WHERE
                             <td>
                                 <select name="sector" class="textbox" onChange="recarga();" required><option></option>
                                     <?php
-                                    $sql = "SELECT ID_SECTOR FROM SGC_TP_SECTORES WHERE ID_PROYECTO = '$proyecto' ORDER BY 1";
-                                    $stid = oci_parse($link, $sql);
-                                    oci_execute($stid, OCI_DEFAULT);
+                                    $a= new Sector();
+                                    $stid=$a->getSecMantCorByPro($proyecto);
                                     while (oci_fetch($stid)) {
-                                        $cod_sector = oci_result($stid, 'ID_SECTOR') ;
+                                        $cod_sector = oci_result($stid, 'CODIGO') ;
                                         if($cod_sector == $sector) echo "<option value='$cod_sector' selected>$cod_sector</option>\n";
                                         else echo "<option value='$cod_sector'>$cod_sector</option>\n";
                                     }oci_free_statement($stid);
@@ -172,9 +125,8 @@ WHERE
                             <td>
                                 <select name="ruta" class="textbox" onChange="recarga();" required><option></option>
                                     <?php
-                                    $sql = "SELECT ID_RUTA FROM SGC_TP_RUTAS WHERE ID_SECTOR = '$sector' AND ID_PROYECTO = '$proyecto'";
-                                    $stid = oci_parse($link, $sql);
-                                    oci_execute($stid, OCI_DEFAULT);
+                                    $a= new Ruta();
+                                    $stid=$a->getRutaBySectorProyecto($sector,$proyecto);
                                     while (oci_fetch($stid)) {
                                         $cod_ruta = oci_result($stid, 'ID_RUTA') ;
                                         if($cod_ruta == $ruta) echo "<option value='$cod_ruta' selected>$cod_ruta</option>\n";
@@ -187,9 +139,8 @@ WHERE
                             <td>
                                 <select name="periodo" class="textbox" required><option></option>
                                     <?php
-                                    $sql = "SELECT ID_PERIODO FROM SGC_TP_PERIODOS WHERE CIERRE = 'N' AND ID_PERIODO>=TO_CHAR(SYSDATE,'YYYYMM')  AND ROWNUM<3 ORDER BY ID_PERIODO ASC ";
-                                    $stid = oci_parse($link, $sql);
-                                    oci_execute($stid, OCI_DEFAULT);
+                                    $a=new Periodo();
+                                    $stid=$a->getPeriodoAsig();
                                     while (oci_fetch($stid)) {
                                         $cod_periodo = oci_result($stid, 'ID_PERIODO') ;
                                         if($cod_periodo == $periodo) echo "<option value='$cod_periodo' selected>$cod_periodo</option>\n";
@@ -202,10 +153,8 @@ WHERE
                             <td>
                                 <select name="operario" class="textbox" required><option></option>
                                     <?php
-                                    $sql = "SELECT ID_USUARIO, NOM_USR, APE_USR FROM SGC_TT_USUARIOS WHERE ID_PROYECTO = '$proyecto' AND (ID_CARGO = 4 OR CATASTRO = 'S')
-						AND FEC_FIN IS NULL";
-                                    $stid = oci_parse($link, $sql);
-                                    oci_execute($stid, OCI_DEFAULT);
+                                    $a= new Usuario();
+                                    $stid=$a->getUsrasigByProyect($proyecto);
                                     while (oci_fetch($stid)) {
                                         $cod_operario = oci_result($stid, 'ID_USUARIO') ;
                                         $nom_operario = oci_result($stid, 'NOM_USR') ;

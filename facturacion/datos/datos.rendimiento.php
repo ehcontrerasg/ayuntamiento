@@ -1,7 +1,6 @@
 <?php
 session_start();
 include '../clases/class.rendimiento.php';
-include_once ('../../include.php');
 include('../../destruye_sesion.php');
 $proyecto = $_GET['proyecto'];
 $periodo = $_GET['periodo'];

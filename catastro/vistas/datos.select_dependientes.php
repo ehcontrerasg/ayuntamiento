@@ -27,7 +27,6 @@ if(validaSelect($selectDestino) && validaOpcion($opcionSeleccionada))
 {
 	//$tabla=$listadoSelects[$selectDestino];
 	//Conectamos con la base de datos
-	include_once ('../../include.php');
 	$Cnn = new OracleConn(UserGeneral, PassGeneral);
 	$link = $Cnn->link;
 	//include 'conexion.php';

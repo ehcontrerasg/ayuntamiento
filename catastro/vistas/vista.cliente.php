@@ -1,16 +1,15 @@
-<?
+<?php
 include_once ('../../clases/class.PermisosURL.php');
 $permisos = new PermisosURL();
 $verificarPermisos = $permisos->VerificaPermisos();
 if ($verificarPermisos==true): ?>
     <?php
     session_start();
-
+    error_reporting(E_ALL);
+    ini_set('display_errors', '1');
     include '../../destruye_sesion.php';
-
     $_SESSION['tiempo']=time();
     $_POST['codigo']=$_SESSION['codigo'];
-
     ?>
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
     <html xmlns="http://www.w3.org/1999/xhtml">

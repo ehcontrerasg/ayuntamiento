@@ -26,7 +26,7 @@ $selectDestino=$_GET["select"]; $opcionSeleccionada=$_GET["opcion"];
 if(validaSelect($selectDestino) && validaOpcion($opcionSeleccionada))
 {
 	//$tabla=$listadoSelects[$selectDestino];
-	include_once ('../../include.php');
+
 	$Cnn = new OracleConn(UserGeneral, PassGeneral);
 	$link = $Cnn->link;
 	

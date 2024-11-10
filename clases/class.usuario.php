@@ -109,6 +109,24 @@ class Usuario extends ConexionClass
         }
     }
 
+
+    public function getUsrasigByProyect($proyecto)
+    {
+
+        $sql = "SELECT ID_USUARIO, NOM_USR, APE_USR FROM SGC_TT_USUARIOS WHERE ID_PROYECTO = '$proyecto' AND (ID_CARGO = 4 OR CATASTRO = 'S')
+						AND FEC_FIN IS NULL";
+
+        $resultado = oci_parse($this->_db, $sql);
+        $bandera = oci_execute($resultado);
+        if ($bandera) {
+            oci_close($this->_db);
+            return $resultado;
+        } else {
+            oci_close($this->_db);
+            return false;
+        }
+    }
+
     public function getPerfUsrByusu($user, $url)
     {
         $user = addslashes($user);

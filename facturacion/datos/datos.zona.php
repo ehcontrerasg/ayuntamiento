@@ -1,5 +1,4 @@
 <?php
-include_once ('../../include.php');
 $proyecto=$_GET['proyecto'];
 
 // Here, we will get user input data and trim it, if any space in that user input data

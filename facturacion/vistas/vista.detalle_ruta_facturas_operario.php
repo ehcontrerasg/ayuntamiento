@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once ('../../include.php');
 include_once ('../clases/class.usuarios.php');
 $coduser = $_SESSION['codigo'];
 $cod_operario = $_GET['cod_operario'];

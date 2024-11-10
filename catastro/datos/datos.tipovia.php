@@ -1,5 +1,4 @@
 <?php
-include_once ('../../include.php');
 $project = $_POST['project'];
  
 //Conectamos con la base de datos	

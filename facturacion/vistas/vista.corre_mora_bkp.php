@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once ('../../include.php');
 require'../clases/classAperturaZona.php';
 require'../clases/class.facturas.php';
 include('../../destruye_sesion.php');

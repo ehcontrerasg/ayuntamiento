@@ -9,7 +9,6 @@ ini_set('display_errors', '1');
 /*  FECHA CREACION 23/09/2014                                        */
 /********************************************************************/
 
-include_once 'include.php';
 include_once 'clases/class.usuario.php';
 $loguser   = $_SESSION['usuario'];
 $passuser  = $_SESSION['contrasena'];

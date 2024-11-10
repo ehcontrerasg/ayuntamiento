@@ -1,7 +1,6 @@
 <?php
   session_start();
- 
-  include_once ('../../../include.php');
+
 	$loguser = $_SESSION['usuario'];
 	$passuser = $_SESSION['contrasena'];
 	$coduser = $_SESSION['codigo']; 

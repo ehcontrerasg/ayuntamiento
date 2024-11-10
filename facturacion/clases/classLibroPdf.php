@@ -1,5 +1,5 @@
 <?
-include_once ('../../include.php');
+
 //require'../clases/classImpresion.php';
 require_once("../clases/fpdf.php");
 $proyecto = $_GET['proyecto'];
@@ -29,7 +29,7 @@ class PDF extends FPDF {
 		$this->Text(40,20,$proyecto." ".$desproyecto);
 		$this->Text(80,20,"Contratista:",1,0,'C');
 		$this->Text(105,20,"ACEA DOMINICANA");
-		$this->Text(155,20,"Pág:      ".$this->PageNo().' / {nb}',0,0,'R');	
+		$this->Text(155,20,"Pï¿½g:      ".$this->PageNo().' / {nb}',0,0,'R');	
 		$this->Text(15,25,"Zona:"); 
 		$this->Text(40,25,$zona);
 		$this->Text(80,25,"Lector:");

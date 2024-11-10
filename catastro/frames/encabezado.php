@@ -6,14 +6,12 @@ session_start();
 	/*  CREADO POR JESUS GUTIERREZ ORTIZ								*/
 	/*  FECHA CREACION 23/09/2014										*/
 	/********************************************************************/
-include_once ('../../include.php');
 $loguser = $_SESSION['usuario'];
 $passuser = $_SESSION['contrasena'];
 $coduser = $_SESSION['codigo'];
 $nomuser = $_SESSION['nombre'];
 // Establecemos la conexión
-$Cnn = new OracleConn(UserGeneral, PassGeneral);
-$link = $Cnn->link;
+
 ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">

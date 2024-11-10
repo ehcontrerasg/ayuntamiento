@@ -1,4 +1,4 @@
-<?
+<?php
 include_once ('../../clases/class.PermisosURL.php');
 $permisos = new PermisosURL();
 $verificarPermisos = $permisos->VerificaPermisos();

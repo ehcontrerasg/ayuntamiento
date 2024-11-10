@@ -1,5 +1,4 @@
 <?
-include_once ('../../include.php');
 include ('../clases/fpdf.php');
 require_once ('../../funciones/barcode/barcode.inc.php');
 $factura=$_GET['factura'];
@@ -102,12 +101,12 @@ if($factura != ''){
 	$pdf->SetFont('times','B',6);
 	$pdf->Text(67,28,'CORPORACION DEL ACUEDUCTO Y ALCANTARILLADO DE SANTO DOMINGO');
 	$pdf->SetFont('Arial','B',10);
-	$pdf->Text(10,15,'Código Sistema');
+	$pdf->Text(10,15,'Cï¿½digo Sistema');
 	$pdf->SetFont('Arial','B',16);
 	$pdf->Text(10,25,$codinm);
 	$pdf->SetFont('Arial','B',10);
 	$pdf->Text(150,15,'NCF '.$ncffac);
-	$pdf->Text(150,20,'Código de Inmueble');
+	$pdf->Text(150,20,'Cï¿½digo de Inmueble');
 	$pdf->Text(150,25,$catastro);
 	$pdf->Ln(25);
 	$pdf->Rect(10,35,190,15);
@@ -130,7 +129,7 @@ if($factura != ''){
 	$pdf->Cell(93,7,'',0,0,'C');
 	$pdf->Cell(4,7,'',0,0,'C');
 	$pdf->SetFont('Arial','B',8);
-	$pdf->Cell(28,5,'Factura Número:',0,0,'L');
+	$pdf->Cell(28,5,'Factura Nï¿½mero:',0,0,'L');
 	$pdf->SetFont('Arial','',9);
 	$pdf->Cell(27,5,$factura,0,0,'C');
 	$pdf->SetFont('Arial','B',8);
@@ -141,7 +140,7 @@ if($factura != ''){
 	$pdf->Cell(93,7,'',0,0,'C');
 	$pdf->Cell(4,7,'',0,0,'C');
 	$pdf->SetFont('Arial','B',8);
-	$pdf->Cell(28,5,'Fecha de Emisión:',0,0,'L');
+	$pdf->Cell(28,5,'Fecha de Emisiï¿½n:',0,0,'L');
 	$pdf->SetFont('Arial','',9);
 	$pdf->Cell(27,5,$fecexp,0,0,'C');
 	$pdf->SetFont('Arial','B',8);
@@ -254,12 +253,12 @@ if($factura != ''){
 	$pdf->Cell(17,5,'',0,0,'L');
 	$pdf->Cell(83,5,'FAVOR NO COLOCAR SELLOS SOBRE EL CODIGO DE BARRAS',0,0,'C');
 	$pdf->SetFont('Arial','B',8);
-	$pdf->Text(111,255,'Factura Número:');
+	$pdf->Text(111,255,'Factura Nï¿½mero:');
 	$pdf->Text(111,259,'Periodo:');
-	$pdf->Text(111,263,'Código Inmueble:');
-	$pdf->Text(111,267,'Código Proceso:');
+	$pdf->Text(111,263,'Cï¿½digo Inmueble:');
+	$pdf->Text(111,267,'Cï¿½digo Proceso:');
 	$pdf->Text(154,255,'Fecha de Exp:');
-	$pdf->Text(154,259,'Código Sistema:');
+	$pdf->Text(154,259,'Cï¿½digo Sistema:');
 	
 	$pdf->SetFont('Arial','',8);
 	$pdf->Text(137,255,$factura);

@@ -6,7 +6,6 @@
 	/* FECHA DE CREACION : 30/04/2008               */
 	/************************************************/
 	session_start();
-	include_once ('../../../include.php');
 	$loguser = $_SESSION['usuario'];
 	$passuser = $_SESSION['contrasena'];
 	$coduser = $_SESSION['codigo']; 
@@ -41,7 +40,7 @@
 		if($entra == 1)echo "],";
 			unset($cod_menu, $des_menu);
   	}oci_free_statement($stid);
-	echo utf8_encode("['MENÚ PRINCIPAL','../../../index2.php/', {'tw' : '_top'}],");
+	echo utf8_encode("['MENï¿½ PRINCIPAL','../../../index2.php/', {'tw' : '_top'}],");
 	echo "['SALIR','../../../index.php', {'tw' : '_top'}],";
 	echo "];";
 ?>

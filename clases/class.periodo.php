@@ -184,6 +184,19 @@ class Periodo extends ConexionClass{
         }
     }
 
+    public  function getPeriodoAsig(){
+        $sql = "SELECT ID_PERIODO FROM SGC_TP_PERIODOS WHERE CIERRE = 'N' AND ID_PERIODO>=TO_CHAR(SYSDATE,'YYYYMM')  AND ROWNUM<3 ORDER BY ID_PERIODO ASC ";
+        $resultado=oci_parse($this->_db,$sql);
+        $bandera=oci_execute($resultado);
+        if($bandera){
+            oci_close($this->_db);
+            return $resultado;
+        }else{
+            oci_close($this->_db);
+            return false;
+        }
+    }
+
 
     public function obtenerperiodosMed (){
         $resultado = oci_parse($this->_db,"

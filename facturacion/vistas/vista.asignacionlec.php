@@ -7,7 +7,6 @@ if ($verificarPermisos==true): ?>
 
     <?php
     session_start();
-    include_once ('../../include.php');
     require'../clases/classAsignaLotes.php';
     include('../../destruye_sesion.php');
 //pasamos variables por post

@@ -7,7 +7,6 @@
 	/*  FECHA CREACION 23/09/2014										*/
 	/********************************************************************/
   	session_start();
-	include_once ('../../../include.php');
 	$loguser = $_SESSION['usuario'];
 	$passuser = $_SESSION['contrasena'];
 	$coduser = $_SESSION['codigo']; 

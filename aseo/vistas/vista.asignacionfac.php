@@ -5,7 +5,6 @@ $verificarPermisos = $permisos->VerificaPermisos();
 if ($verificarPermisos==true): ?>
     <?php
     session_start();
-    include_once ('../../include.php');
     require'../clases/classAsignaFac.php';
     include('../../destruye_sesion.php');
 //pasamos variables por post

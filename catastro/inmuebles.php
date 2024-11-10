@@ -3,7 +3,6 @@
 error_reporting(E_ALL);
 ini_set('display_errors', '1');
 session_start();
-include_once ('../include.php');
 $coduser = $_SESSION['codigo'];
 include_once 'clases/class.parametros.php';
 //$periodo = ($_GET['periodo']);
@@ -11,9 +10,7 @@ include_once 'clases/class.parametros.php';
 //$ruta = ($_GET['ruta']);
 //$periodo = $_POST['periodo'];
 
-//Conectamos con la base de datos   
-$Cnn = new OracleConn(UserGeneral, PassGeneral);
-$link = $Cnn->link;
+
 $a=new parametros();
 $codcargo=$a->ObtenerCargo($_SESSION['codigo']);
 ?>

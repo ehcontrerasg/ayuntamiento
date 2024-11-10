@@ -5,7 +5,6 @@ $verificarPermisos = $permisos->VerificaPermisos();
 if ($verificarPermisos==true): ?>
     <?php
     session_start();
-    include_once ('../../include.php');
     $coduser = $_SESSION['codigo'];
     if($_GET['cod_inmueble']){
         $cod_sistema = ($_GET['cod_inmueble']);

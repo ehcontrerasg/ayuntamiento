@@ -1,5 +1,4 @@
 <?php
-include_once ('../../include.php');
 $uso = $_POST['uso'];
  
 //Conectamos con la base de datos	

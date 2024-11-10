@@ -6,7 +6,6 @@ session_start();
 	/*  CREADO POR JESUS GUTIERREZ ORTIZ								*/
 	/*  FECHA CREACION 23/09/2014										*/
 	/********************************************************************/
-include_once ('../../include.php');
 $loguser = $_SESSION['usuario'];
 $passuser = $_SESSION['contrasena'];
 $coduser = $_SESSION['codigo'];

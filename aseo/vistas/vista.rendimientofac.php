@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once ('../../include.php');
 include('../../destruye_sesion.php');
 
 $coduser = $_SESSION['codigo'];

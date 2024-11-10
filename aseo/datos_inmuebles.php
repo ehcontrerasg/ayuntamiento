@@ -1,7 +1,6 @@
 <?php
 session_start();
 include('../destruye_sesion.php');
-include_once ('../include.php');
 
 //$operario = ($_GET['operario']);
 //$ruta = ($_GET['ruta']);

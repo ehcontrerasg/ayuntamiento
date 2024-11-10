@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once ('../include.php');
 
 $periodo = ($_GET['periodo']);
 $operario = ($_GET['operario']);

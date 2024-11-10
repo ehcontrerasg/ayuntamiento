@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once '../include.php';
 include '../destruye_sesion.php';
 $proyecto    = ($_GET['proyecto']);
 $periodo_ini = ($_GET['periodoI']);

@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once '../../include.php';
 $coduser     = $_SESSION['codigo'];
 $periodo_ini = ($_GET['periodoI']);
 $periodo_fin = ($_GET['periodoF']);

@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once ('../../include.php');
 
 $proyecto = ($_GET['proyecto']);
 $sector = ($_GET['sector']);

@@ -7,7 +7,6 @@ if ($verificarPermisos==true): ?>
     <?php
     session_start();
     include('../destruye_sesion.php');
-    include_once ('../include.php');
 
     $coduser = $_SESSION['codigo'];
     $proyecto = $_POST['proyecto'];

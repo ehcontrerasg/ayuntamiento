@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once ('../../include.php');
 
 include '../clases/class.rendimientofac.php';
 //$fecini = ($_GET['fecini']);

@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once ('../../include.php');
 include_once ('../clases/class.coordenadasfac.php');
 $coduser = $_SESSION['codigo'];
 $cod_ruta = ($_GET['cod_ruta']);

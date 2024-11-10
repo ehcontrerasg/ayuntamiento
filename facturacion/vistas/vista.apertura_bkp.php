@@ -1,6 +1,5 @@
 <?php
 session_start();
-include_once ('../../include.php');
 require'../clases/classAperturaZona.php';
 include('../../destruye_sesion.php');
 $coduser = $_SESSION['codigo'];
