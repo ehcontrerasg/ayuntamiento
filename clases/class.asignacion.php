@@ -1,5 +1,5 @@
 <?php
-include "class.conexion.php";
+require_once  "class.conexion.php";
 
 
 class Asignacion extends ConexionClass{

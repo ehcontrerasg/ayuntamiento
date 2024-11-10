@@ -1,4 +1,6 @@
 <?php
+error_reporting(E_ERROR);
+ini_set("display_errors", "1");
 include_once ('../clases/class.PermisosURL.php');
 include_once ('../clases/class.asignacion.php');
 include_once ('../clases/class.proyecto.php');
